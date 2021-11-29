@@ -1479,11 +1479,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7302447103002101714, guid: f7f87fb9c518a9c4789f9c5871598f97, type: 3}
       propertyPath: minYClamp
-      value: -45
+      value: -38
       objectReference: {fileID: 0}
     - target: {fileID: 7302447103002101714, guid: f7f87fb9c518a9c4789f9c5871598f97, type: 3}
       propertyPath: maxYClamp
-      value: 45
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302447103002101714, guid: f7f87fb9c518a9c4789f9c5871598f97, type: 3}
+      propertyPath: minXClamp
+      value: -105
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302447103002101714, guid: f7f87fb9c518a9c4789f9c5871598f97, type: 3}
+      propertyPath: maxXClamp
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 7302447103002101715, guid: f7f87fb9c518a9c4789f9c5871598f97, type: 3}
       propertyPath: m_RenderPostProcessing
