@@ -181,4 +181,3 @@ MonoBehaviour:
   cam: {fileID: 7302447103002101712}
   mouseLook: {fileID: 7302447103002101714}
   zoomSpeed: 0.5
-  v: {fileID: 0}

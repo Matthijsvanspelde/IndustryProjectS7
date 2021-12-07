@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.Rendering.Universal;
 
 public class ComputerInteraction : MonoBehaviour
 {
@@ -11,6 +9,7 @@ public class ComputerInteraction : MonoBehaviour
     private Transform zoomPosition;
     private bool isInteracting = false;
     private bool isLerping = false;
+    private Computer computer;
 
     private void FixedUpdate()
     {
@@ -18,24 +17,31 @@ public class ComputerInteraction : MonoBehaviour
         StopInteraction();
     }
 
-    private void StartInteraction() 
+    private void StartInteraction()
     {
         RaycastHit hit;
         Vector3 CameraCenter = cam.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, cam.nearClipPlane));
-        if (Input.GetMouseButton(0) && !isLerping)
+        if (Physics.Raycast(CameraCenter, cam.transform.forward, out hit) && hit.transform.CompareTag("Computer") && !isLerping)
         {
-            if (Physics.Raycast(CameraCenter, cam.transform.forward, out hit) && hit.transform.CompareTag("Computer"))
+            computer = hit.transform.gameObject.GetComponent<Computer>();
+            computer.ShowToolTip();
+            if (Input.GetKey(KeyCode.E))
             {
-                zoomPosition = hit.transform.gameObject.GetComponent<Computer>().zoomPoint.transform;
+                computer.HideToolTip();
+                zoomPosition = computer.zoomPoint.transform;
                 mouseLook.canMove = false;
                 StartCoroutine(LerpOverTime(transform, zoomPosition, zoomSpeed));
             }
+        }
+        else if (computer != null)
+        {
+            computer.HideToolTip();
         }
     }
 
     private void StopInteraction() 
     {
-        if (Input.GetKey(KeyCode.E) && isInteracting && !isLerping)
+        if (Input.GetKey(KeyCode.Tab) && isInteracting && !isLerping)
         {
             mouseLook.canMove = true;
             isInteracting = false;
