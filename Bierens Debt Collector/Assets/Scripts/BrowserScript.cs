@@ -10,6 +10,7 @@ public class BrowserScript : MonoBehaviour
     public GameObject Hyves;
     public GameObject KantoorVanKoophandel;
     public GameObject AddressBar;
+    public GameObject websiteBackground;
 
     private GameObject currentPage;
     private GameObject previousPage;
@@ -23,6 +24,7 @@ public class BrowserScript : MonoBehaviour
     private void changeWebsite(GameObject website)
     {
         previousPage = currentPage;
+        NextPage = null;
         currentPage.SetActive(false);
         currentPage = website;
         currentPage.SetActive(true);
