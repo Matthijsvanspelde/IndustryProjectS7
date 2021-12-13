@@ -25,13 +25,13 @@ public class ComputerInteractable : Interactable
     {
         if (!isLerping)
         {
-            canvas.SetActive(true);
+            toolTipCanvas.SetActive(true);
         }      
     }
 
     public override void HideToolTip()
     {
-        canvas.SetActive(false);
+        toolTipCanvas.SetActive(false);
     }
 
     public override void Interact()

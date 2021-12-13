@@ -2,7 +2,7 @@
 
 public abstract class Interactable : MonoBehaviour
 {
-    public GameObject canvas;
+    public GameObject toolTipCanvas;
 
     public abstract void Interact();
     public abstract void ShowToolTip();
