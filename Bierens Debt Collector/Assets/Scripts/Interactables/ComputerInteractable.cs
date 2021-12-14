@@ -41,6 +41,8 @@ public class ComputerInteractable : Interactable
             HideToolTip();
             mouseLook.canMove = false;
             StartCoroutine(LerpOverTime(startPosition, zoomPosition, zoomSpeed));
+            Cursor.lockState = CursorLockMode.None;
+            GetComponent<Collider>().enabled = false;
         }       
     }
 
@@ -51,6 +53,8 @@ public class ComputerInteractable : Interactable
             mouseLook.canMove = true;
             isInteracting = false;
             cam.transform.position = startPosition.position;
+            Cursor.lockState = CursorLockMode.Locked;
+            GetComponent<Collider>().enabled = true;
         }
     }
 
