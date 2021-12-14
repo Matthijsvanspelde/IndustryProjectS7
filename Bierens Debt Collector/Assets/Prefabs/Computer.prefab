@@ -142,7 +142,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3589333493158463532, guid: 3fc9ba3869cd7484f8ec64af96549d65, type: 3}
+  - {fileID: -6478536213147159724, guid: c76e8c734753ce947ba7986b67d7ed03, type: 3}
   - {fileID: -2867747967464863736, guid: 3fc9ba3869cd7484f8ec64af96549d65, type: 3}
   - {fileID: -2813467912831258332, guid: 2e496f10077abed45b2815131fb43b45, type: 3}
   - {fileID: 2100000, guid: d67bc1bc740a445428009a2140c491a8, type: 2}
@@ -425,9 +425,10 @@ GameObject:
   - component: {fileID: 9119138186091811321}
   - component: {fileID: 9119138186091811320}
   - component: {fileID: 9119138186091811323}
+  - component: {fileID: 9119138185247699163}
   m_Layer: 0
   m_Name: Computer
-  m_TagString: Computer
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,6 +477,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 9119138185184554353}
   zoomPoint: {fileID: 9119138185728685080}
+--- !u!114 &9119138185247699163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119138186091811270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92f784211aef89428cd81c604c586bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  mouseLook: {fileID: 0}
+  zoomSpeed: 0.5
 --- !u!1001 &6729419835341993058
 PrefabInstance:
   m_ObjectHideFlags: 0

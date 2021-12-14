@@ -43,7 +43,7 @@ Camera:
   m_GameObject: {fileID: 7302447103002101726}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -143,7 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7302447103021164548}
-  - component: {fileID: 1357092803}
+  - component: {fileID: 7302447102275769194}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -166,7 +166,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1357092803
+--- !u!114 &7302447102275769194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,9 +175,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7302447103021164547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f92f784211aef89428cd81c604c586bd, type: 3}
+  m_Script: {fileID: 11500000, guid: fde82a03486128f428d038772692aa18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 7302447103002101712}
-  mouseLook: {fileID: 7302447103002101714}
-  zoomSpeed: 0.5
