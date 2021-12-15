@@ -17,11 +17,8 @@ public class Interaction : MonoBehaviour
         if (Physics.Raycast(CameraCenter, cam.transform.forward, out hit) && hit.transform.CompareTag("Interactable"))
         {
             interactable = hit.transform.gameObject.GetComponent<Interactable>();
-            interactable.ShowToolTip();
-            if (Input.GetKey(KeyCode.E))
-            {              
-                interactable.Interact();
-            }
+            interactable.ShowToolTip();            
+            interactable.Interact();
         }
         else if (interactable != null)
         {

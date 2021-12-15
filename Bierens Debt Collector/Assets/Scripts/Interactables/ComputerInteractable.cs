@@ -36,14 +36,17 @@ public class ComputerInteractable : Interactable
 
     public override void Interact()
     {
-        if (!isLerping)
+        if (Input.GetKey(KeyCode.E))
         {
-            HideToolTip();
-            mouseLook.canMove = false;
-            StartCoroutine(LerpOverTime(startPosition, zoomPosition, zoomSpeed));
-            Cursor.lockState = CursorLockMode.None;
-            GetComponent<Collider>().enabled = false;
-        }       
+            if (!isLerping)
+            {
+                HideToolTip();
+                mouseLook.canMove = false;
+                StartCoroutine(LerpOverTime(startPosition, zoomPosition, zoomSpeed));
+                Cursor.lockState = CursorLockMode.None;
+                GetComponent<Collider>().enabled = false;
+            }
+        }           
     }
 
     private void StopInteraction() 
