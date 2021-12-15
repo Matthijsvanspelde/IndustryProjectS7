@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[CreateAssetMenu]
 public class PlayerResponseScriptableObject : ScriptableObject
 {
     private string PositivePlayerResponse;
