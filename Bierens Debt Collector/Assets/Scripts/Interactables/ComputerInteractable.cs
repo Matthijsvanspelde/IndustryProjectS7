@@ -1,42 +1,52 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class ComputerInteraction : MonoBehaviour
+public class ComputerInteractable : Interactable
 {
     [SerializeField] private Camera cam;
     [SerializeField] private MouseLook mouseLook;
     [SerializeField] private float zoomSpeed = 0.5f;
-    private Transform zoomPosition;
+    [SerializeField] private Transform zoomPosition;
+    [SerializeField] private Transform startPosition;
     private bool isInteracting = false;
     private bool isLerping = false;
-    private Computer computer;
+
+    private void Awake()
+    {
+        HideToolTip();
+    }
 
     private void FixedUpdate()
     {
-        StartInteraction();
         StopInteraction();
     }
 
-    private void StartInteraction()
+    public override void ShowToolTip()
     {
-        RaycastHit hit;
-        Vector3 CameraCenter = cam.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, cam.nearClipPlane));
-        if (Physics.Raycast(CameraCenter, cam.transform.forward, out hit) && hit.transform.CompareTag("Computer") && !isLerping)
+        if (!isLerping)
         {
-            computer = hit.transform.gameObject.GetComponent<Computer>();
-            computer.ShowToolTip();
-            if (Input.GetKey(KeyCode.E))
+            toolTipCanvas.SetActive(true);
+        }      
+    }
+
+    public override void HideToolTip()
+    {
+        toolTipCanvas.SetActive(false);
+    }
+
+    public override void Interact()
+    {
+        if (Input.GetKey(KeyCode.E))
+        {
+            if (!isLerping)
             {
-                computer.HideToolTip();
-                zoomPosition = computer.zoomPoint.transform;
+                HideToolTip();
                 mouseLook.canMove = false;
-                StartCoroutine(LerpOverTime(transform, zoomPosition, zoomSpeed));
+                StartCoroutine(LerpOverTime(startPosition, zoomPosition, zoomSpeed));
+                Cursor.lockState = CursorLockMode.None;
+                GetComponent<Collider>().enabled = false;
             }
-        }
-        else if (computer != null)
-        {
-            computer.HideToolTip();
-        }
+        }           
     }
 
     private void StopInteraction() 
@@ -45,7 +55,9 @@ public class ComputerInteraction : MonoBehaviour
         {
             mouseLook.canMove = true;
             isInteracting = false;
-            cam.transform.position = transform.position;
+            cam.transform.position = startPosition.position;
+            Cursor.lockState = CursorLockMode.Locked;
+            GetComponent<Collider>().enabled = true;
         }
     }
 
