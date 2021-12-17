@@ -8,7 +8,9 @@ public class StoryScriptableObject : ScriptableObject
     [Header("story Leads To")]
     public StoryScriptableObject payResponse;
     public StoryScriptableObject conformtationResponse;
+    public StoryScriptableObject excuse;
     public StoryScriptableObject CallBierensResponse;
+    public StoryScriptableObject SendMemoryMail;
     public bool storyFinished;
 
 
@@ -18,6 +20,7 @@ public class StoryScriptableObject : ScriptableObject
     public string mailHeader;
 
     [Header("Other Events?")]
+
 
     public bool needReseach;
 }
