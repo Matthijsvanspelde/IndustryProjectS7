@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class UIUpdateController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+public void CreateUIButtonsForScenarios()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

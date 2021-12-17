@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class ScenarioController : MonoBehaviour
 {
-    [SerializeField] private List<ScenarioScriptableObject> scenarioStartObject;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private List<ScenarioScriptableObject> scenarioStartObjects;
+    private int stressLevel;
+    private int levelsCompleted;
 
-    // Update is called once per frame
-    void Update()
+    public ScenarioScriptableObject StartScenario(int scenarioID)
     {
-        
+        return scenarioStartObjects[scenarioID];
     }
 }

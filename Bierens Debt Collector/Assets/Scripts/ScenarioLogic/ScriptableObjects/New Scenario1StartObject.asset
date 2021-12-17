@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35cfb7d2baa32a5428030f7c4ed19eac, type: 3}
   m_Name: New Scenario1StartObject
   m_EditorClassIdentifier: 
-  id: 0
+  model: {fileID: 0}
+  responseScriptableObjects:
+  - {fileID: 11400000, guid: fa189bbde2fa5da43980f15c536954a5, type: 2}
