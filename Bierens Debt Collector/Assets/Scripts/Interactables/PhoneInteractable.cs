@@ -37,11 +37,14 @@ public class PhoneInteractable : Interactable
 
     public override void Interact()
     {
-        if (isActive)
+        if (Input.GetKey(KeyCode.E))
         {
-            animator.SetTrigger("PressButton");
-            audioSource.Stop();
-            isActive = false;
-        }       
+            if (isActive)
+            {
+                animator.SetTrigger("PressButton");
+                audioSource.Stop();
+                isActive = false;
+            }
+        }              
     }
 }
