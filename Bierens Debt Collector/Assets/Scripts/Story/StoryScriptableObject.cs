@@ -20,7 +20,5 @@ public class StoryScriptableObject : ScriptableObject
     public string mailHeader;
 
     [Header("Other Events?")]
-
-
-    public bool needReseach;
+    public ValidationScriptableObject validation;
 }

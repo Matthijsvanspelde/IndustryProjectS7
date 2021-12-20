@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ValidationCompany", menuName = "ScriptableObjects/ValidationCompany", order = 1)]
 public class ValidationScriptableObject : ScriptableObject
 {
-    //what is needed for validation.
+    public  List<string> ValidationText;
+    public bool OpenButtonsCallBierens;
+    public bool OpenButtonsConforntation;
 
 }
