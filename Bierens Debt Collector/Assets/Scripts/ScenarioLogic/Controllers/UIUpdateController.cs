@@ -8,4 +8,8 @@ public void CreateUIButtonsForScenarios()
     {
 
     }
+    public void LoadScenario(int index)
+    {
+
+    }
 }

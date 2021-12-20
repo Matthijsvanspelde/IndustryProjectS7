@@ -48,8 +48,6 @@ public class MailView : MonoBehaviour
     {
         switch(response.response)
         {
-            case ResponseCode.SendResponse.PAYNOW:
-                break;
             case ResponseCode.SendResponse.CONFRONTATION:
                 break;
             case ResponseCode.SendResponse.CALLBIERENS:

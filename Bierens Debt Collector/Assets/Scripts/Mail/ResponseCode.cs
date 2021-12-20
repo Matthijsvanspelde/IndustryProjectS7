@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class ResponseCode 
 {
-    public enum SendResponse { PAYNOW, CONFRONTATION, CALLBIERENS, RESEARCHCONFRONTATION }
+    public enum SendResponse {CONFRONTATION, CALLBIERENS, RESEARCHCONFRONTATION }
     public SendResponse response;
 }
