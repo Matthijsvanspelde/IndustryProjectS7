@@ -11,7 +11,7 @@ public class RenderTextureInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             RaycastHit hit;
             
@@ -28,7 +28,8 @@ public class RenderTextureInteraction : MonoBehaviour
                 if (Physics.Raycast(portalRay, out portalHit))
                 {
                     Debug.DrawRay(portalRay.origin, portalHit.transform.position,Color.red);
-                    portalHit.collider.gameObject.GetComponent<Button>().onClick.Invoke();
+                    Debug.Log(portalHit.transform.position);
+                    portalHit.collider.gameObject.GetComponent<UIInteractable>().Interact(portalHit.transform.position);
                 }
             }
         }
