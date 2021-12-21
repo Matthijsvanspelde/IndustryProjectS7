@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
-  m_Name: StartStory
+  m_Script: {fileID: 11500000, guid: 35cfb7d2baa32a5428030f7c4ed19eac, type: 3}
+  m_Name: New Scenario1StartObject
   m_EditorClassIdentifier: 
-  payResponse: {fileID: 0}
-  conformtationResponse: {fileID: 0}
-  CallBierensResponse: {fileID: 0}
-  storyFinished: 0
-  mailTextBox: 
-  mailHeader: PaperClip and Co
-  needReseach: 0
+  model: {fileID: 0}
+  responseScriptableObjects:
+  - {fileID: 11400000, guid: fa189bbde2fa5da43980f15c536954a5, type: 2}
