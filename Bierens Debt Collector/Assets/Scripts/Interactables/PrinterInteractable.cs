@@ -1,28 +1,34 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class PhoneInteractable : Interactable
+public class PrinterInteractable : Interactable
 {
     private bool isActive = false;
     [SerializeField] private Animator animator;
     [SerializeField] private AudioSource audioSource;
+    [Header("Partical Systems")]
+    [SerializeField] ParticleSystem paperEmitter;
+    [SerializeField] ParticleSystem paper;
+    
+    public override void HideToolTip()
+    {
+        
+    }
 
     public override void ShowToolTip()
     {
         
     }
 
-    public void StartRinging() 
+    public void StartPrinting() 
     {
         if (!isActive)
         {
             isActive = true;
-            audioSource.Play();
-        }       
-    }
-
-    public override void HideToolTip()
-    {
-        
+            paperEmitter.Play();
+            paper.Play();
+        }        
     }
 
     public override void Interact()
@@ -34,7 +40,9 @@ public class PhoneInteractable : Interactable
                 animator.SetTrigger("PressButton");
                 audioSource.Stop();
                 isActive = false;
+                paperEmitter.Stop();
+                paper.Stop();
             }
-        }              
+        }
     }
 }
