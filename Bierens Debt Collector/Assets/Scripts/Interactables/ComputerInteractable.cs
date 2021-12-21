@@ -18,7 +18,10 @@ public class ComputerInteractable : Interactable
 
     private void FixedUpdate()
     {
-        StopInteraction();
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            StopInteraction();
+        }       
     }
 
     public override void ShowToolTip()
@@ -49,9 +52,9 @@ public class ComputerInteractable : Interactable
         }           
     }
 
-    private void StopInteraction() 
-    {
-        if (Input.GetKey(KeyCode.Tab) && isInteracting && !isLerping)
+    public void StopInteraction() 
+    {        
+        if (isInteracting && !isLerping)
         {
             mouseLook.canMove = true;
             isInteracting = false;
@@ -60,6 +63,8 @@ public class ComputerInteractable : Interactable
             GetComponent<Collider>().enabled = true;
         }
     }
+
+
 
     private IEnumerator LerpOverTime(Transform startPos, Transform endPos, float duration)
     {

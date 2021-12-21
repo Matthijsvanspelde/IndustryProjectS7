@@ -6,28 +6,18 @@ public class PhoneInteractable : Interactable
     [SerializeField] private Animator animator;
     [SerializeField] private AudioSource audioSource;
 
-    private void Start()
-    {
-        //StartRinging();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            StartRinging();
-        }
-    }
-
     public override void ShowToolTip()
     {
         
     }
 
-    private void StartRinging() 
+    public void StartRinging() 
     {
-        isActive = true;
-        audioSource.Play();
+        if (!isActive)
+        {
+            isActive = true;
+            audioSource.Play();
+        }       
     }
 
     public override void HideToolTip()

@@ -35,7 +35,6 @@ public class PickupInteractable : Interactable
     {
         if (Input.GetMouseButtonUp(0))
         {
-            Debug.Log("adasd");
             Rigidbody rb = GetComponent<Rigidbody>();
             rb.useGravity = true;
             transform.parent = null;
