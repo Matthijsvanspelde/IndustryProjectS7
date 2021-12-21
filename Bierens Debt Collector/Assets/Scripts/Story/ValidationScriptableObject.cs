@@ -8,5 +8,5 @@ public class ValidationScriptableObject : ScriptableObject
     public  List<string> ValidationText;
     public bool OpenButtonsCallBierens;
     public bool OpenButtonsConforntation;
-
+    public bool OpenButtonfoundMail;
 }
