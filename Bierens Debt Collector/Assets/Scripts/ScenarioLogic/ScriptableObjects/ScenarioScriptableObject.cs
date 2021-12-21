@@ -3,6 +3,6 @@ using UnityEngine;
 [CreateAssetMenu]
 public class ScenarioScriptableObject : ScriptableObject
 {
-    public EmailModel model;
+    public MailModel model;
     public List<PlayerResponseScriptableObject> responseScriptableObjects;
 }

@@ -4,16 +4,23 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerResponseScriptableObject : ScriptableObject
 {
-    private string PositivePlayerResponse;
     private string DemandingPlayerResponse;
     private string RequestingPlayerResponse;
     private string ThreatheningPlayerResponse;
 
-public string[] RandomiseResponses(DebitorResponseEnum debitorResponseEnum)
+public string GetPlayerResponse()
     {
-        string[] returnvalue = new string[4];
-
-
-        return returnvalue;
+        if (DemandingPlayerResponse.Length > 0)
+        {
+            return DemandingPlayerResponse;
+        }
+       else if (RequestingPlayerResponse.Length > 0)
+        {
+            return RequestingPlayerResponse;
+        }
+        else
+        {
+            return ThreatheningPlayerResponse;
+        }
     }
 }

@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class DebitorResponseScriptableObject : ScriptableObject
 {
-    private List<string> smoezen;
-    private List<string> betalingsWeigering;
+    private string smoes;
+    private string betalingsWeigering;
+
+    public string ReturnResponse()
+    {
+        if (smoes.Length > 0)
+        {
+            return smoes;
+        }
+        else
+        {
+            return betalingsWeigering;
+        }
+    }
 }
