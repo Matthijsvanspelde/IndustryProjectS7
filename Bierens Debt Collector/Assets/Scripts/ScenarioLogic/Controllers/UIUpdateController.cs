@@ -7,6 +7,11 @@ public class UIUpdateController : MonoBehaviour
     [SerializeField] private GameController gameController;
 public void CreateUIButtonsForScenarios()
     {
+        List<StoryScriptableObject> objects = gameController.GetStoryScriptableObjects();
+        foreach(StoryScriptableObject storyScriptableObject in objects)
+        {
+
+        }
 
     }
     public void LoadScenario(int index)
