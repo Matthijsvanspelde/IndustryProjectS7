@@ -16,8 +16,11 @@ public class BrowserScript : MonoBehaviour
     private GameObject previousPage;
     private GameObject NextPage;
 
+    private Color32 hyvesColor;
+
     void Start()
     {
+        hyvesColor = new Color32(70, 90, 178, 255);
         currentPage = Vindhet;
     }
 
@@ -35,22 +38,27 @@ public class BrowserScript : MonoBehaviour
         if(currentPage == Vindhet)
         {
             AddressBar.GetComponent<InputField>().text = "http://www.vindhet.nl/";
+            websiteBackground.GetComponent<Image>().color = Color.white;
         }
         else if(currentPage == Hyves)
         {
             AddressBar.GetComponent<InputField>().text = "http://www.hyves.nl/";
+            websiteBackground.GetComponent<Image>().color = hyvesColor;
         }
         else if(currentPage == Recensie)
         {
             AddressBar.GetComponent<InputField>().text = "http://www.recensie.nl/";
+            websiteBackground.GetComponent<Image>().color = Color.white;
         }
         else if(currentPage == KantoorVanKoophandel)
         {
             AddressBar.GetComponent<InputField>().text = "http://www.kantoorvankoophandel.nl/";
+            websiteBackground.GetComponent<Image>().color = Color.white;
         }
         else
         {
             AddressBar.GetComponent<InputField>().text = "http://www.websitenotfound.nl/";
+            websiteBackground.GetComponent<Image>().color = Color.white;
         }
     }
 
