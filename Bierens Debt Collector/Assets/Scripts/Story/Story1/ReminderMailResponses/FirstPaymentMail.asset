@@ -15,8 +15,22 @@ MonoBehaviour:
   confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 0}
-  SendMemoryMail: {fileID: 0}
+  SendMemoryMail: {fileID: 11400000}
   storyFinished: 0
-  mailTextBox: 
-  mailHeader: 
+  mailTextBox: 'Beste medewerker van Papier&Co,
+
+
+    Uit data gevonden in onze database
+    blijkt dat er nog en bedrag open staat voor een levering van 3000 vellen A4 papier.
+
+    Graag
+    verzoek ik u deze zo snel mogelijk te betalen.
+
+
+    Met vriendelijke groet,
+
+
+    Medewerker
+    van Webshop.nl'
+  mailHeader: Achterstaande betaling voor levering papier
   validation: {fileID: 0}

@@ -17,6 +17,10 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 0
-  mailTextBox: 
-  mailHeader: 
+  mailTextBox: "Beste medewerker van Papier&Co,\n\nIk eis van u of iemand van hogere
+    rang om nu de te betalen schulden aan ons af te betalen. \nJullie hebben een
+    bestelling van 5000 euro gedaan en nog niet betaal. Dit is onacceptabel!\nHierbij
+    geef ik Papier&Co een waarschuwing. Indien niet betaald wordt zullen er zware
+    maatregelen worden uitgevoerd!\n\nGroeten,\nMedewerker van Webshop.nl"
+  mailHeader: Los nu uw achterstallige betaling af!
   validation: {fileID: 0}
