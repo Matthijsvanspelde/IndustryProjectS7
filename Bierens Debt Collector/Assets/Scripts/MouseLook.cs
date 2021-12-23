@@ -13,14 +13,7 @@ public class MouseLook : MonoBehaviour
     private float yRotation = 0f;
     private float xRotation = 0f;
 
-    public bool canMove;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        canMove = true;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    public bool canMove = true;
 
     // Update is called once per frame
     void Update()
