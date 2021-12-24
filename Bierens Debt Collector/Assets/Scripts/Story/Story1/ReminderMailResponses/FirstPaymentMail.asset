@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: FirstPaymentMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 0}
+  confrontationResponse: {fileID: 11400000, guid: eb503b61e31605a4da57a0635b348e7d, type: 2}
   excuse: {fileID: 0}
-  CallBierensResponse: {fileID: 0}
-  SendMemoryMail: {fileID: 11400000}
+  CallBierensResponse: {fileID: 11400000, guid: 19fab4b506035544bb7c2c8a8f1bd33a, type: 2}
+  SendMemoryMail: {fileID: 0}
   storyFinished: 0
   mailTextBox: 'Beste medewerker van Papier&Co,
 

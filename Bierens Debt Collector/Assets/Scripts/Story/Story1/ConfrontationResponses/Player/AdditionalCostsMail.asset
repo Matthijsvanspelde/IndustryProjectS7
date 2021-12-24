@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: AdditionalCostsMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: ae63433e2f22f814b89ac841a7d7e7fb, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 0}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste medewerker van Papier&Co,
+
+
+    U heeft verschillende betalingsverzoeken
+    genegeerd. Wegens deze reden breng ik u extra kosten in rekening.
+
+    Deze kosten
+    zullen 10% zijn van het bedrag dat uw bedrijf ons verschuldigd is.
+
+    Niet
+    reageren op deze mail zal zorgen dat het totaalbedrag met nogmaals 10% zal worden
+    verhoogt.
+
+
+    Gelieve zo snel mogelijk betalen of van u laten horen, of er
+    zullen meer kosten in rekening worden gebracht,
+
+
+    Groeten,
+
+
+    Medewerker
+    van Webshop.nl'
+  mailHeader: Extra kosten voor negering voorgaande berichten
+  validation: {fileID: 0}
