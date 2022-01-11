@@ -9,6 +9,7 @@ public class BrowserScript : MonoBehaviour
     public GameObject Recensie;
     public GameObject Hyves;
     public GameObject KantoorVanKoophandel;
+    public GameObject Bierens;
     public GameObject AddressBar;
     public GameObject websiteBackground;
 
@@ -55,6 +56,11 @@ public class BrowserScript : MonoBehaviour
             AddressBar.GetComponent<InputField>().text = "http://www.kantoorvankoophandel.nl/";
             websiteBackground.GetComponent<Image>().color = Color.white;
         }
+        else if (currentPage == Bierens)
+        {
+            AddressBar.GetComponent<InputField>().text = "http://www.bierensgroup.com/";
+            websiteBackground.GetComponent<Image>().color = Color.white;
+        }
         else
         {
             AddressBar.GetComponent<InputField>().text = "http://www.websitenotfound.nl/";
@@ -77,6 +83,12 @@ public class BrowserScript : MonoBehaviour
     public void KantoorVanKoophandelButtonClick()
     {
         changeWebsite(KantoorVanKoophandel);
+        checkPage();
+    }
+
+    public void BierensButtonClick()
+    {
+        changeWebsite(Bierens);
         checkPage();
     }
 
