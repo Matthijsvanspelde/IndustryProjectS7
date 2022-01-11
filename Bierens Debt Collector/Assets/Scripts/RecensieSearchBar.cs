@@ -103,7 +103,7 @@ public class RecensieSearchBar : MonoBehaviour
             review4Star5.GetComponent<StarChanger>().starFilled = true;
             review4Comment.GetComponent<Text>().text = "Goede website. Aanrader voor iedereen die bedrijven wil nachecken.";
         }
-        else if(searchInput == "www.kantoorspul.nl" || searchInput == "www.kantoorspul.com" || searchInput == "kantoorspul.nl" || searchInput == "kantoorspul.com" || searchInput == "www.Kantoorspul.nl" || searchInput == "www.Kantoorspul.com" || searchInput == "Kantoorspul.nl" || searchInput == "Kantoorspul.com")
+        else if(searchInput == "www.kantoorspul.nl" || searchInput == "www.kantoorspul.com" || searchInput == "kantoorspul.nl" || searchInput == "kantoorspul.com" || searchInput == "www.Kantoorspul.nl" || searchInput == "www.Kantoorspul.com" || searchInput == "Kantoorspul.nl" || searchInput == "Kantoorspul.com" || searchInput == "Kantoorspul" || searchInput == "kantoorspul")
         {
             userScoreStar1.GetComponent<StarChanger>().starFilled = true;
             userScoreStar2.GetComponent<StarChanger>().starFilled = true;
