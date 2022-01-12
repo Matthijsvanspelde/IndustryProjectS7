@@ -1,1 +1,0 @@
-# IndustryProjectS7
