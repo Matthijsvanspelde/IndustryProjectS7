@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: NoPaymentTermMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: 80ca4fcb2c8cd5441856cbf167ade170, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: f6be6151b878db94f825c079058589b2, type: 2}
+  SendMemoryMail: {fileID: 11400000, guid: b8064d2b216f2e14d8bf5f245f53e1c7, type: 2}
+  storyFinished: 0
+  mailTextBox: "beste werknemer van Webshop.nl,\r\n\nIk heb in de administratie gechecked
+    en er is inderdaad een openstaande factuur voor de bestelling. Er is daarentegen
+    geen betalingstermijn voor dit contract dus er is geen reden om mij te verplichten
+    te betalen, aangezien geen vaste datum is afgesproken. U krijgt betaald wanneer
+    ik er zin in heb\r.\n\r\nGroeten,\r\n\r\nPap van Ier"
+  mailHeader: Geen betaaltermijn aanwezig in dit contract
+  validation: {fileID: 0}

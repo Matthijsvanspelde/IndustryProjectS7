@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: SecondDeliveryReminderMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 0}
+  excuse: {fileID: 11400000, guid: 1ccf075df2b5fa04196b23b37daef6ca, type: 2}
+  CallBierensResponse: {fileID: 0}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste Pap van Ier,
+
+
+    U heeft na de vorige reminder nogsteeds
+    niet betaald voor de kosten van uw bestelling. Graag vraag ik u nogmaals hiervoor
+    zo snel mogelijk te betalen zoals in het contract is besproken.
+
+
+    Alle gegevens
+    over uw bestelling zijn nogmaals aan deze mail toegevoegd.
+
+
+    Groeten,
+
+
+    Medewerker
+    van Webshop.nl'
+  mailHeader: tweede reminder betaling levering
+  validation: {fileID: 0}

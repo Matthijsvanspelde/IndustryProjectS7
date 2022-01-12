@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: BadExcuseForEvadingPaymentMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 0}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 0}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste Pap van Ier,
+
+
+    De reden die u geeft voor het niet kunnen
+    betalen van uw bestelling is heel zwak en ook geen probleem voor mij of voor
+    Webshop.nl. U heeft een contract ondertekend en U bent hieraan gebonden totdat
+    de betaling is voldaan.
+
+
+    Graag zie ik U zo spoedig mogelijk de bestelling
+    betalen. Toegevoegd aan deze mail zijn de data van de desbetreffende bestelling.
+
+
+    Groeten,
+
+
+    Medewerker
+    van Webshop.nl'
+  mailHeader: Uw problemen zijn geen geldig excuus
+  validation: {fileID: 0}

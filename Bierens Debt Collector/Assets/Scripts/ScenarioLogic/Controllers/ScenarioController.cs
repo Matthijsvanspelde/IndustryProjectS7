@@ -10,6 +10,10 @@ public class ScenarioController : MonoBehaviour
     private int stressLevel;
     private int levelsCompleted;
 
+    public List<StoryScriptableObject> StartObjectsList()
+    {
+        return scenarioStartObjects;
+    }
 
     public StoryScriptableObject StartScenario(int scenarioID)
     {

@@ -6,8 +6,7 @@ using UnityEngine;
 public class StoryScriptableObject : ScriptableObject
 {
     [Header("story Leads To")]
-    public StoryScriptableObject payResponse;
-    public StoryScriptableObject conformtationResponse;
+    public StoryScriptableObject confrontationResponse;
     public StoryScriptableObject excuse;
     public StoryScriptableObject CallBierensResponse;
     public StoryScriptableObject SendMemoryMail;

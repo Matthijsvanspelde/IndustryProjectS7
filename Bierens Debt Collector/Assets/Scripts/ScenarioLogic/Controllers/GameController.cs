@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private ScenarioController ScenarioController;
+    [SerializeField] private MailController mailController;
+
+    public List<StoryScriptableObject> GetStoryScriptableObjects()
     {
-        
+        return ScenarioController.StartObjectsList();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void LoadScenario(int index)
     {
-        
+        mailController.CreateStoryMail(ScenarioController.StartScenario(index));
+    }
+    public void NextStoryPart(StoryScriptableObject storyScriptableObject)
+    {
+        mailController.CreateStoryMail(storyScriptableObject);
     }
 }
