@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Row : MonoBehaviour
 {
     //Row
-    [SerializeField] TextMesh rowOrdernr, rowDate, rowCompany, rowOrdertxt, rowShipment, rowPayment;
+    [SerializeField] Text rowOrdernr, rowDate, rowCompany, rowOrdertxt, rowShipment, rowPayment;
     //Order Details
-    [SerializeField] TextMesh detailsOrdernr, detailsCompany, detailsAddress, detailsCity, detailsZip, detailsProvince, detailsCountry, detailsEmail, detailsPhone, detailsDate, detailsShipment, detailsPayment;
+    [SerializeField] Text detailsOrdernr, detailsCompany, detailsAddress, detailsCity, detailsZip, detailsProvince, detailsCountry, detailsEmail, detailsPhone, detailsDate, detailsShipment, detailsPayment;
 
     GameObject detailWindow;
     Order order;
