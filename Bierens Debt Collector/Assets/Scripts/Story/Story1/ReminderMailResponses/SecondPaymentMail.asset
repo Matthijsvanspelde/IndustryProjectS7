@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: SecondPaymentMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: 937758c48ae41524cb082567271ad25b, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 0}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste medewerker van Papier&Co,
+
+
+    Recent heb ik geprobeert een
+    mail te sturen, maar dit was naar een verkeerd opgegeven adres. Ik heb moeten
+    zoeken naar het echte email adres en stuur hierom een tweede reminder.
+
+    Graag
+    vraag ik dat jullie zo snel mogelijk de 5000 euro betalen die jullie ons nog
+    schuldig zijn voor een levering. Bij deze mail is een betalingsbrief met de details
+    toegevoegd.'
+  mailHeader: Tweede reminder, achterstallige betaling
+  validation: {fileID: 0}

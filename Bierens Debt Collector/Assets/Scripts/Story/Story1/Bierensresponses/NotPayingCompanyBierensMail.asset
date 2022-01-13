@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: NotPayingCompanyBierensMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 0}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 0}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 1
+  mailTextBox: 'Beste medewerkers van Bierens,
+
+
+    Ik ben ten einde raad voor hoe
+    ik met Papier&Co om moet gaan. Deze klant wilt hoe dan ook niet betalen en geeft
+    ook aan niet meer te gaan reageren op mails die ik stuur. Kunnen jullie dit bedrijf
+    op de tand voeren en de eigenaar onder handen nemen. Ik wil graag dat deze zaak
+    wordt afgerond maar zelf kan ik niks meer doen.
+
+
+    Aan deze mail is alle informatie
+    toegevoegd betreffende de zaak, het bedrijf en de naam van de contactpersoon
+    waar ik mee heb gecontacteerd met het bedrijf.'
+  mailHeader: Niet betalende klant
+  validation: {fileID: 0}

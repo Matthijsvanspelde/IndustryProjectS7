@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: IncompleteEvidenceResponseMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: 4ce5d75d8557a7a4ab65d2b31fb36b48, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: f75c3c5ab48b3254e8fc6cf45ff1f11a, type: 2}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste werknemer van Webshop.nl,
+
+
+    Ik kan niet zeggen dat er
+    genoeg bewijsmateriaal is meegeleverd om mij te overtuigen te betalen voor de
+    rekeningen. Graag verzoek ik u meer informatie toe te sturen over de levering
+
+    
+
+    Groeten,
+
+    
+
+    Pap
+    van Ier'
+  mailHeader: Niet genoeg informatie
+  validation: {fileID: 0}

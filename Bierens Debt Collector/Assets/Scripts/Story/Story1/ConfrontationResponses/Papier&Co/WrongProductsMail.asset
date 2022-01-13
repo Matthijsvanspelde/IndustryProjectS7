@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: WrongProductsMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: 2f414cb6864d3e146ae4e612034de55d, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: fed04cf7ab13ba44687585681541a4d3, type: 2}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste medewerker van Webshop.nl
+
+
+    Hier schrijft Pap van Ier,
+    eigenaar van Papier&Co. Wat u hier doet is onacceptabel. U voegt extra kosten
+    toe aan mijn bestelling terwijl jullie niet eens in staat zijn om de juiste producten
+    te leveren. Voordat jullie hier iets aan doen zal ik geen cent geven.
+
+
+    Groeten,
+
+
+    Pap
+    van Ier.'
+  mailHeader: Re - Extra kosten voor negering voorgaande berichten
+  validation: {fileID: 0}

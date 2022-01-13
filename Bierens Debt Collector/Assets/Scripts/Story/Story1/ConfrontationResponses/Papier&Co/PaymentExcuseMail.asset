@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: PaymentExcuseMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: ea57b097a0f952241bc183f1507f0996, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: c21f015cdd412d64783c10ef839bed0a, type: 2}
+  SendMemoryMail: {fileID: 11400000, guid: 9ce9bdd198938084d9078273248067b3, type: 2}
+  storyFinished: 0
+  mailTextBox: 'Beste medewerker van Webshop.nl,
+
+
+    Ik heb inderdaad een bestelling
+    gedaan bij jullie webshop, maar ik heb geen tijd om de betaling te volbrengen.
+    Ik heb een hoop onkosten waarvoor ik eerst een aantal verkopen moet hebben volbracht
+    voordat ik de rekening zal betalen.
+
+
+    Groeten,
+
+
+    Pap van ier'
+  mailHeader: Latere betaling
+  validation: {fileID: 0}

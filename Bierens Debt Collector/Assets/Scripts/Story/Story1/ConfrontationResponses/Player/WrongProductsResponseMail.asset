@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: WrongProductsResponseMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: f575baae7c7de0c4f9ae8d9b66a39a21, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 0}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste Pap van Ier,
+
+
+    Na het doorzoeken van onze administratie
+    heb ik gevonden dat u geen verkeerde producten geleverd heeft gekregen, maar
+    eerder ons een foute locatie heeft meegegeven. Wegens deze reden zijn uw producten
+    geretourneerd en verward u nu een andere levering met uw originele bestelling.
+
+
+    We
+    kunnen uw levering nogmaals verzenden, maar hiervoor voegen we wel extra bezorgkosten
+    toe om de kosten van de eerste levering te dekken.
+
+
+    Groeten,
+
+
+    Werknemer
+    van Webshop.nl'
+  mailHeader: -Re- Wrong products received
+  validation: {fileID: 0}

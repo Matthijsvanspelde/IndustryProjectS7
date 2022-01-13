@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: WaitingForMoneyResponseMail
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 0}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: ffd4cfc75c6b4324fa61815f87ea8081, type: 2}
+  SendMemoryMail: {fileID: 11400000, guid: 077c1ac6f6a0f344e90e787c4c7d3d87, type: 2}
+  storyFinished: 1
+  mailTextBox: "Beste medewerker van Webshop.nl,\n\nIk kan helaas niet betalen want
+    ik heb het geld ergens anders aan moeten besteden. U zult betaalt worden wanneer
+    ik het geld hiervoor heb\r. Dit kan even duren maar het geld zal uiteindelijk
+    worden toegestuurd.\n\r\nGroeten,\r\n\r\nPap van Ier eigenaar van Papier&CO"
+  mailHeader: Latere betaling
+  validation: {fileID: 0}
