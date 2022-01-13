@@ -25,6 +25,8 @@ public class ScenarioController : MonoBehaviour
         mailController.CreateStoryMail(storyScriptableObject);
     }
 
+    
+
     public void ResponseDebet()
     {
 

@@ -18,6 +18,9 @@ public class StoryScriptableObject : ScriptableObject
     public string mailTextBox;
     public string mailHeader;
 
+    [TextArea]
+    public string ResponseTextBox;
+
     [Header("Other Events?")]
     public ValidationScriptableObject validation;
 }

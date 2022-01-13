@@ -13,6 +13,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private MouseLook mouseLook;
     [SerializeField] private Interaction interaction;
     [SerializeField] private Animator animator;
+    [SerializeField] private GameController gameController;
 
     [SerializeField] private Volume v;
     void Start()
@@ -36,7 +37,7 @@ public class MainMenuController : MonoBehaviour
         scenarioPickerMenu.SetActive(true);
     }
     
-    public void StartGame() 
+    public void StartGame(int indexStartGame) 
     {
         if (!hasStarted)
         {
@@ -46,6 +47,7 @@ public class MainMenuController : MonoBehaviour
             {
                 tmp.active = false;
             }
+            gameController.LoadScenario(indexStartGame);
             animator.SetTrigger("StartGame");
         }        
     }

@@ -18,8 +18,6 @@ public class MailView : MonoBehaviour
     public void Start()
     {
         respondCode = new ResponseCode();
-        CreateNewMail(new MailModel("This is A TestMail", "testText"));
-        CreateNewMail(new MailModel("Greetings agian", "this is a greetings mail to you."));
     }
 
     public void CreateNewMail(MailModel mailModel)
@@ -27,8 +25,11 @@ public class MailView : MonoBehaviour
         GameObject mailObject = Instantiate(mailButtonPrefab);
         mailObject.GetComponentInChildren<TextMeshProUGUI>().text = mailModel.Header;
         mailObject.GetComponent<Button>().onClick.AddListener( delegate { OpenMail(mailObject); });
+    
         mailObject.transform.SetParent(MailParant);
+        mailObject.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
         mailObject.transform.localScale = new Vector3(1, 1, 1);
+     
         mailDictonary.Add(mailObject, mailModel);
     }
 
