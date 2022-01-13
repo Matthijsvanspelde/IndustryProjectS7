@@ -10,7 +10,7 @@ public class OrderController : MonoBehaviour
     public GameObject createOrderRow(Order order)
     {
         GameObject newRow = Instantiate(orderRowPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-        newRow.GetComponent<Row>().fillItemRow(order, detailWindow);
+        //newRow.GetComponent<Row>().fillItemRow(order, detailWindow);
 
         return newRow;
     }

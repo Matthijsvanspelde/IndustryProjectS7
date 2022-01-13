@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 4646464291667901644}
   - component: {fileID: 4646464291667901647}
   - component: {fileID: 4646464291667901646}
+  - component: {fileID: 5732074674326740119}
   m_Layer: 5
   m_Name: DatabaseRow
   m_TagString: Untagged
@@ -422,6 +423,36 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 6
+--- !u!114 &5732074674326740119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4646464291667901640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cae2cb5a870b34b81e79576f9c1710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rowOrdernr: {fileID: 0}
+  rowDate: {fileID: 0}
+  rowCompany: {fileID: 0}
+  rowOrdertxt: {fileID: 0}
+  rowShipment: {fileID: 0}
+  rowPayment: {fileID: 0}
+  detailsOrdernr: {fileID: 0}
+  detailsCompany: {fileID: 0}
+  detailsAddress: {fileID: 0}
+  detailsCity: {fileID: 0}
+  detailsZip: {fileID: 0}
+  detailsProvince: {fileID: 0}
+  detailsCountry: {fileID: 0}
+  detailsEmail: {fileID: 0}
+  detailsPhone: {fileID: 0}
+  detailsDate: {fileID: 0}
+  detailsShipment: {fileID: 0}
+  detailsPayment: {fileID: 0}
 --- !u!1 &4646464292080602697
 GameObject:
   m_ObjectHideFlags: 0

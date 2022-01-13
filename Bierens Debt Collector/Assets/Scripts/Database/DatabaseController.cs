@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class DatabaseController : MonoBehaviour
 {
-    //Maak het database aan: vul de grid met de orders. Dit kan via OrderController
+    [SerializeField] private List<GameObject> dbRows;
+    [SerializeField] private Transform content;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach (var row in dbRows)
+        {
+            Instantiate(row, content);
+        }
     }
 }
