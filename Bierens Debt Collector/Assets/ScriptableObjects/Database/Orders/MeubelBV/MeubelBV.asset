@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58ffa206ae71664497f046afb8a56fa, type: 3}
+  m_Name: MeubelBV
+  m_EditorClassIdentifier: 
+  dateOrdered: 27-11-1999
+  shipment: Magazijn
+  payment: Betaald
+  total: 1200,-
+  orderNr: 161249
+  company: Meubel B.V.
+  address: Hoekstraat
+  city: Veghel
+  zip: 5445GD
+  province: Noord-Brabant
+  country: Nederland
+  email: Meubel@servicedesk.nl
+  phone: 026-2431245
+  detailWindow: {fileID: 0}
+  items:
+  - {fileID: 11400000, guid: 7a9ba7d8369d79d4aa5e92c8a154149d, type: 2}
+  - {fileID: 11400000, guid: 629d619cc9e540c4f811fc46b30499ea, type: 2}
+  - {fileID: 11400000, guid: 8d6dffd4d7650da469d016fa82a2342e, type: 2}
