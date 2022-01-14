@@ -253,9 +253,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orderController: {fileID: 4953814165090228558}
-  orderDetailWindow: {fileID: 580991022519311008, guid: e227d74e97627c944852bbd1176e4f11, type: 3}
+  orderDetailWindow: {fileID: 6227775733417711895, guid: d15cf96a9dc951b4ba16c091865e05d6, type: 3}
   content: {fileID: 4953814165351424286}
-  prefabRow: {fileID: 5309027978320770273, guid: bfdcfad7ecc1e6240bbb0c39e23eab67, type: 3}
+  prefabRow: {fileID: 4646464291667901640, guid: ec93eabb82530d945bf4e7da0fd32d70, type: 3}
 --- !u!114 &4953814165090228558
 MonoBehaviour:
   m_ObjectHideFlags: 0

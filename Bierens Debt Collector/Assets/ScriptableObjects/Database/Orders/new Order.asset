@@ -24,3 +24,4 @@ MonoBehaviour:
   dateOrdered: refeg
   shipment: hyhiyj
   payment: werwcv
+  detailWindow: {fileID: 0}
