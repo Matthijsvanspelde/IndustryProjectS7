@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class OrderController : MonoBehaviour
 {
-    Order order;
-    [SerializeField] GameObject orderRowPrefab, orderList, detailWindow;
+    public Order order1;
+    public Order order2;
+    public Order order3;
+    public Order order4;
 
-    public GameObject createOrderRow(Order order)
+    public List<Order> getFirstOrderList()
     {
-        GameObject newRow = Instantiate(orderRowPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-        //newRow.GetComponent<Row>().fillItemRow(order, detailWindow);
+        List<Order> firstlist = new List<Order>();
+        firstlist.Add(order1);
+        firstlist.Add(order2);
+        firstlist.Add(order3);
+        firstlist.Add(order4);
 
-        return newRow;
-    }
-
+        return firstlist;
+    }    
 }

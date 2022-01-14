@@ -1,17 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DatabaseController : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> dbRows;
+    public OrderController orderController;
+    public GameObject orderDetailWindow;
+
     [SerializeField] private Transform content;
+    [SerializeField] private GameObject prefabRow;
 
     void Start()
     {
-        foreach (var row in dbRows)
+        List<Order> rowList = orderController.getFirstOrderList();
+        
+        foreach (var row in rowList)
         {
-            Instantiate(row, content);
+            prefabRow.GetComponent<RowDisplay>().orderScriptable = row;
+            prefabRow.GetComponent<RowDisplay>().createRow();
+            Instantiate(prefabRow, content);
         }
+
     }
 }
