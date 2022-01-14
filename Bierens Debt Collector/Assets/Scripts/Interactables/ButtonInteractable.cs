@@ -16,6 +16,9 @@ public class ButtonInteractable : Interactable
     }
     public override void Interact()
     {
-        gameObject.GetComponent<Button>().onClick.Invoke();
+        if (gameObject.GetComponent<Button>() != null)
+        {
+            gameObject.GetComponent<Button>().onClick.Invoke();
+        }
     }
 }
