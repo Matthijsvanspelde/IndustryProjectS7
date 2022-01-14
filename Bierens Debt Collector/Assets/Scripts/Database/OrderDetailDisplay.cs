@@ -19,6 +19,10 @@ public class OrderDetailDisplay : MonoBehaviour
     public Text detailDateOrdered;
     public Text detailShipment;
     public Text detailPayment;
+    public Text detailTotal;
+
+    [SerializeField] private Transform content;
+    [SerializeField] private GameObject prefabRow;
 
     void Start()
     {
@@ -42,6 +46,13 @@ public class OrderDetailDisplay : MonoBehaviour
         detailDateOrdered.text = orderScriptable.dateOrdered;
         detailShipment.text = orderScriptable.shipment;
         detailPayment.text = orderScriptable.payment;
+        detailTotal.text = orderScriptable.total;
 
+        foreach (var row in orderScriptable.items)
+        {
+            prefabRow.GetComponent<ItemDisplay>().itemScriptable = row;
+            //prefabRow.GetComponent<RowDisplay>().createRow();
+            Instantiate(prefabRow, content);
+        }
     }
 }

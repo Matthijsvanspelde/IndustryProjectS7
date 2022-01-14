@@ -2,23 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item
+[CreateAssetMenu(fileName = "new item", menuName = "ScriptableObjects/ItemScriptable")]
+public class Item : ScriptableObject
 {
-    public string itemNr { get; set; }
-    public string name { get; set; }
-    public string quantity { get; set; }
-    public string details { get; set; }
-
-    public Item()
-    {
-
-    }
-    public Item(string itemNr, string name, string quantity, string details)
-    {
-        this.itemNr = itemNr;
-        this.name = name;
-        this.quantity = quantity;
-        this.details = details;
-    }
-
+    public string itemNr;
+    public string itemName;
+    public string quantity;
+    public string details;
 }

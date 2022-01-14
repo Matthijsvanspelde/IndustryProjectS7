@@ -24,4 +24,6 @@ MonoBehaviour:
   dateOrdered: refeg
   shipment: hyhiyj
   payment: werwcv
+  total: 666.69
   detailWindow: {fileID: 0}
+  items: []

@@ -20,10 +20,9 @@ public class DatabaseController : MonoBehaviour
         foreach (var row in rowList)
         {
             prefabRow.GetComponent<RowDisplay>().orderScriptable = row;
-            //prefabRow.GetComponent<RowDisplay>().createRow();
             Instantiate(prefabRow, content);
         }
-        openOrderDetails(testRow);
+        orderDetailWindow.GetComponent<OrderDetailDisplay>().showOrderDetails(orderDetailWindow, rowList[0]);
     }
 
     public void openOrderDetails(GameObject order)
