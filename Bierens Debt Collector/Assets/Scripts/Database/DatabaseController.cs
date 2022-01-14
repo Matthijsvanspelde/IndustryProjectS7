@@ -18,9 +18,14 @@ public class DatabaseController : MonoBehaviour
         foreach (var row in rowList)
         {
             prefabRow.GetComponent<RowDisplay>().orderScriptable = row;
-            prefabRow.GetComponent<RowDisplay>().createRow();
+            //prefabRow.GetComponent<RowDisplay>().createRow();
             Instantiate(prefabRow, content);
         }
+        //openOrderDetails(rowList[1]);
+    }
 
+    public void openOrderDetails(Order order)
+    {
+        orderDetailWindow.GetComponent<OrderDetailDisplay>().showOrderDetails(orderDetailWindow, order);
     }
 }
