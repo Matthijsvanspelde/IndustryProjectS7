@@ -1,10 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "new Order", menuName = "ScriptableObjects/OrderScriptable")]
 public class Order : ScriptableObject
 {
+    [Header("Row data")]
+    public string dateOrdered;
+    public string shipment;
+    public string payment;
+    public string total;
+
+    [Header("Details data")]
     public string orderNr;
     public string company;
     public string address;
@@ -14,10 +20,6 @@ public class Order : ScriptableObject
     public string country;
     public string email;
     public string phone;
-    public string dateOrdered;
-    public string shipment;
-    public string payment;
-    public string total;
 
     public GameObject detailWindow;
 

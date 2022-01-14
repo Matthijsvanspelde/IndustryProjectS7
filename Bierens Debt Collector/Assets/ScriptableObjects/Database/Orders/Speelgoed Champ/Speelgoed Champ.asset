@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a58ffa206ae71664497f046afb8a56fa, type: 3}
-  m_Name: Papier&Co
+  m_Name: Speelgoed Champ
   m_EditorClassIdentifier: 
-  orderNr: 115248
-  company: Papier&Co
-  address: De Rijpstraat 140
-  city: Arnhem
-  zip: 6828 ZN
-  province: Gelderland
+  dateOrdered: 6-10-1999
+  shipment: Extern
+  payment: Betaald
+  total: 920,11
+  orderNr: 947828
+  company: Speelgoed Champ
+  address: Straatlaan 87
+  city: Urk
+  zip: 2188PO
+  province: Flevoland
   country: Nederland
-  email: info@papierco.nl
-  phone: 026-2531495
-  dateOrdered: 13-12-1999
-  shipment: Magazijn
-  payment: Openstaand
-  total: 5000.-
+  email: Speelgoedchamp@info.nl
+  phone: 06 34331185
   detailWindow: {fileID: 0}
   items:
-  - {fileID: 11400000, guid: 38e0ae21a35c33440b27e6d51248bc24, type: 2}
   - {fileID: 11400000, guid: b21dcb3e44d47f54bb5241d5cc86dc77, type: 2}
+  - {fileID: 11400000, guid: b072e3a17d3f6284a9d0ab671560d6ea, type: 2}

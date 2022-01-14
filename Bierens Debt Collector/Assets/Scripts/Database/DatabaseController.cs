@@ -22,7 +22,6 @@ public class DatabaseController : MonoBehaviour
             prefabRow.GetComponent<RowDisplay>().orderScriptable = row;
             Instantiate(prefabRow, content);
         }
-        orderDetailWindow.GetComponent<OrderDetailDisplay>().showOrderDetails(orderDetailWindow, rowList[0]);
     }
 
     public void openOrderDetails(GameObject order)
