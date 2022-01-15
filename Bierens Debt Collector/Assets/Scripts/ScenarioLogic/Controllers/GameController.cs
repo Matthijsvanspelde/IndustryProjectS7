@@ -6,6 +6,15 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] private ScenarioController ScenarioController;
     [SerializeField] private MailController mailController;
+    [SerializeField] private List<GameObject> apps;
+
+    private void Start()
+    {
+        foreach (var app in apps)
+        {
+            app.SetActive(true);
+        }
+    }
 
     public List<StoryScriptableObject> GetStoryScriptableObjects()
     {
