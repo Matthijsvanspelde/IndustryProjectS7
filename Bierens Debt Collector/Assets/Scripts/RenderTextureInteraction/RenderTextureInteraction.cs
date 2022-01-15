@@ -32,6 +32,7 @@ public class RenderTextureInteraction : MonoBehaviour
                     Debug.DrawRay(portalRay.origin, portalHit.transform.position,Color.red);
                     if (portalHit.collider.gameObject.GetComponent<Interactable>() != null)
                     {
+                        Debug.Log("Hit");
                         portalHit.collider.gameObject.GetComponent<Interactable>().Interact();
                     }
                 }
