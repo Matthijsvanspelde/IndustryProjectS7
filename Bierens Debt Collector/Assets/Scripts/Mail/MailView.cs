@@ -10,10 +10,13 @@ public class MailView : MonoBehaviour
 
     [SerializeField] private GameObject mailButtonPrefab;
     [SerializeField] private TextMeshProUGUI mailText;
-    [SerializeField] private Transform MailParant;
+    [SerializeField] private Transform MailParent;
     [SerializeField] private GameObject responseWindow;
     Dictionary<GameObject, MailModel> mailDictonary = new Dictionary<GameObject, MailModel>();
     ResponseCode respondCode;
+
+    [SerializeField] private Color32 selectedColor;
+    private GameObject selectedMail;
 
     public void Start()
     {
@@ -26,7 +29,7 @@ public class MailView : MonoBehaviour
         mailObject.GetComponentInChildren<TextMeshProUGUI>().text = mailModel.Header;
         mailObject.GetComponent<Button>().onClick.AddListener( delegate { OpenMail(mailObject); });
     
-        mailObject.transform.SetParent(MailParant);
+        mailObject.transform.SetParent(MailParent);
         mailObject.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
         mailObject.transform.localScale = new Vector3(1, 1, 1);
      
@@ -35,6 +38,13 @@ public class MailView : MonoBehaviour
 
     void OpenMail(GameObject mailObject)
     {
+        if (selectedMail != null)
+        {
+            selectedMail.GetComponent<Image>().color = Color.white;
+        }       
+        selectedMail = mailObject;
+        selectedMail.GetComponent<Image>().color = selectedColor;
+
         MailModel mailModel = mailDictonary[mailObject];
         Debug.Log("You Have Mail");
         mailText.SetText(mailModel.MailText);

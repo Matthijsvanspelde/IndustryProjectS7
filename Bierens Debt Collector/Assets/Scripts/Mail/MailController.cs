@@ -10,6 +10,7 @@ public class MailController : MonoBehaviour
     {
         MailModel mail = new MailModel(storyScriptableObject.mailHeader, storyScriptableObject.mailTextBox);
         mailView.CreateNewMail(mail);
+        mailView.CreateNewMail(mail);
     }
 
     public void PayNowResponse()
