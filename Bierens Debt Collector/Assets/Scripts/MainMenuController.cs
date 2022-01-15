@@ -14,6 +14,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private Interaction interaction;
     [SerializeField] private Animator animator;
     [SerializeField] private GameController gameController;
+    [SerializeField] private Animator animatorOS;
 
     [SerializeField] private Volume v;
     void Start()
@@ -49,6 +50,7 @@ public class MainMenuController : MonoBehaviour
             }
             gameController.LoadScenario(indexStartGame);
             animator.SetTrigger("StartGame");
+            animatorOS.SetTrigger("Open");
         }        
     }
 
