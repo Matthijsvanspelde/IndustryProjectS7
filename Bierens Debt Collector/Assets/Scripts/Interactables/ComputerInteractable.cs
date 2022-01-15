@@ -8,6 +8,7 @@ public class ComputerInteractable : Interactable
     [SerializeField] private float zoomSpeed = 0.5f;
     [SerializeField] private Transform zoomPosition;
     [SerializeField] private Transform startPosition;
+    [SerializeField] private GameObject crosshair;
     private bool isInteracting = false;
     private bool isLerping = false;
 
@@ -43,6 +44,7 @@ public class ComputerInteractable : Interactable
         {
             if (!isLerping)
             {
+                crosshair.SetActive(false);
                 HideToolTip();
                 mouseLook.canMove = false;
                 StartCoroutine(LerpOverTime(startPosition, zoomPosition, zoomSpeed));
@@ -61,6 +63,7 @@ public class ComputerInteractable : Interactable
             cam.transform.position = startPosition.position;
             Cursor.lockState = CursorLockMode.Locked;
             GetComponent<Collider>().enabled = true;
+            crosshair.SetActive(true);
         }
     }
 
