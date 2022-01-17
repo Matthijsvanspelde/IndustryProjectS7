@@ -15,7 +15,7 @@ MonoBehaviour:
   confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 0}
-  SendMemoryMail: {fileID: 11400000, guid: 4bcc0128d6f53a34a90614e4879832e8, type: 2}
+  SendMemoryMail: {fileID: 11400000, guid: 79f849b56629c6d47b5a6a1daa8215f6, type: 2}
   storyFinished: 0
   mailTextBox: 'Beste medewerker van Webshop.nl,
 
@@ -32,4 +32,5 @@ MonoBehaviour:
 
 '
   mailHeader: Papier&Co afleverlocatie
+  ResponseTextBox: 
   validation: {fileID: 0}

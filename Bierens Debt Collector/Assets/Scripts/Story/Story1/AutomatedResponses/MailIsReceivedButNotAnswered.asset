@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: MailIsReceivedButNotAnswered
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 11400000, guid: 038a88761f8165f4bb3e0a89672d3e1b, type: 2}
-  excuse: {fileID: 11400000, guid: 27f05126470cb6f40a2d7c05d10a7e2c, type: 2}
+  confrontationResponse: {fileID: 11400000, guid: 79f849b56629c6d47b5a6a1daa8215f6, type: 2}
+  excuse: {fileID: 11400000, guid: ae63433e2f22f814b89ac841a7d7e7fb, type: 2}
   CallBierensResponse: {fileID: 11400000, guid: 82e45c1c05b183744aa395883fca9307, type: 2}
-  SendMemoryMail: {fileID: 11400000, guid: eadf4caaf97f1404f8ba50b1d0aebb6f, type: 2}
+  SendMemoryMail: {fileID: 11400000}
   storyFinished: 0
   mailTextBox: The mail has been send and received. Your mail has been opened but
     no reply has been send.
   mailHeader: Automated message
+  ResponseTextBox: 
   validation: {fileID: 0}

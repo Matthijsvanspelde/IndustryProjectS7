@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: AnotherBadExcuseMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 11400000, guid: a9f8b7878a78b8046b7f52f236c4fa11, type: 2}
+  confrontationResponse: {fileID: 11400000, guid: f39a1f848bd1f0a478154881f30d154f, type: 2}
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 11400000, guid: b57d87b20d44be74d9da34f4f2127bdd, type: 2}
   SendMemoryMail: {fileID: 0}
@@ -25,12 +25,13 @@ MonoBehaviour:
     zijn met jullie. Ik moet mijn eigen bedrijfstaken eerst afwerken. Je hoort later
     terug van mij als ik het wil.
 
-    
+
 
     Groeten,
 
-    
+
 
     Pap van Ier'
   mailHeader: Stop met de opdringerige mails!
+  ResponseTextBox: 
   validation: {fileID: 0}

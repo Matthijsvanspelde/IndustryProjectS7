@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: StoryStartFrankDeManager
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 11400000, guid: cdec53fbafc3ffe4b95c676898b8e63c, type: 2}
+  confrontationResponse: {fileID: 11400000, guid: 79f849b56629c6d47b5a6a1daa8215f6, type: 2}
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 0}
-  SendMemoryMail: {fileID: 11400000, guid: 374dc9a95ed556d42869095277aa8517, type: 2}
+  SendMemoryMail: {fileID: 11400000, guid: eb503b61e31605a4da57a0635b348e7d, type: 2}
   storyFinished: 0
   mailTextBox: "Beste medewerker,\n\nUit onze administratie is gebleken dat een levering
     van 5000 euro nog niet is betaald door het bedrijf Papier&Co. Het gaat hier om
@@ -23,4 +23,5 @@ MonoBehaviour:
     opnemen met het bedrijf indien de bestelling inderdaad nog niet is afbetaald?\n\nFrank
     de Manager "
   mailHeader: Papier&Co betaling
+  ResponseTextBox: 
   validation: {fileID: 11400000, guid: a69efa48c57efed4e84a9128611ca5d4, type: 2}

@@ -16,7 +16,7 @@ MonoBehaviour:
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
-  storyFinished: 0
+  storyFinished: 1
   mailTextBox: 'Beste medewerkers van Bierens Incasso,
 
 
@@ -38,4 +38,5 @@ MonoBehaviour:
     Werknemer
     van Webshop.nl'
   mailHeader: Bedrijf heeft geen geld om de levering te betalen
+  ResponseTextBox: 
   validation: {fileID: 0}

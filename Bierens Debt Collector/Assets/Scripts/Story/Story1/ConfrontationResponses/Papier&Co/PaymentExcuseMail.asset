@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: PaymentExcuseMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 11400000, guid: ea57b097a0f952241bc183f1507f0996, type: 2}
+  confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 11400000, guid: c21f015cdd412d64783c10ef839bed0a, type: 2}
-  SendMemoryMail: {fileID: 11400000, guid: 9ce9bdd198938084d9078273248067b3, type: 2}
+  SendMemoryMail: {fileID: 11400000, guid: fd103f15b8f498448847e8e718c8506a, type: 2}
   storyFinished: 0
   mailTextBox: 'Beste medewerker van Webshop.nl,
 
@@ -31,4 +31,5 @@ MonoBehaviour:
 
     Pap van ier'
   mailHeader: Latere betaling
+  ResponseTextBox: 
   validation: {fileID: 0}

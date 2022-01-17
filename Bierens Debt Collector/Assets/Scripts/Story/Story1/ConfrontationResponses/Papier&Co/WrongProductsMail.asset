@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: WrongProductsMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 11400000, guid: 2f414cb6864d3e146ae4e612034de55d, type: 2}
+  confrontationResponse: {fileID: 11400000, guid: f575baae7c7de0c4f9ae8d9b66a39a21, type: 2}
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 11400000, guid: fed04cf7ab13ba44687585681541a4d3, type: 2}
   SendMemoryMail: {fileID: 0}
@@ -32,4 +32,5 @@ MonoBehaviour:
     Pap
     van Ier.'
   mailHeader: Re - Extra kosten voor negering voorgaande berichten
+  ResponseTextBox: 
   validation: {fileID: 0}

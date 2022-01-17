@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
-  CallBierensResponse: {fileID: 0}
-  SendMemoryMail: {fileID: 11400000, guid: 13ddf02b8ccdef94fa6623c24098cc2a, type: 2}
+  CallBierensResponse: {fileID: 11400000, guid: 19fab4b506035544bb7c2c8a8f1bd33a, type: 2}
+  SendMemoryMail: {fileID: 11400000, guid: 937758c48ae41524cb082567271ad25b, type: 2}
   storyFinished: 0
   mailTextBox: Mail cannot be delivered. Email adress invalid.
   mailHeader: -Error- Email not send
+  ResponseTextBox: 
   validation: {fileID: 0}

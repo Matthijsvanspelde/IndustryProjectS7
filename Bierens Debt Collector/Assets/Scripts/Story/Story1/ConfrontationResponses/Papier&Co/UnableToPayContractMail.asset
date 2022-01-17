@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
-  CallBierensResponse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: 494379384c5a72c4f939e6bc7838ef05, type: 2}
   SendMemoryMail: {fileID: 0}
   storyFinished: 0
   mailTextBox: 'Beste werknemer van Webshop.nl,
@@ -25,12 +25,13 @@ MonoBehaviour:
     verkopen heb voldaan voordat ik het bedrag kan overmaken. U zult vanzelf het
     geld een keer zien verschijnen
 
-    
+
 
     Groeten,
 
-    
+
 
     Pap van Ier'
   mailHeader: Niet genoeg geld voor de rekening
+  ResponseTextBox: 
   validation: {fileID: 0}
