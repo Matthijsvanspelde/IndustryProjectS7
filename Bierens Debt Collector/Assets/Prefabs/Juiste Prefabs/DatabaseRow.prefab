@@ -121,19 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5032457290300505014}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3415236881842051252, guid: 81fb4a09929355e49af1f89d4d6abd74, type: 3}
-        m_TargetAssemblyTypeName: DatabaseController, Assembly-CSharp
-        m_MethodName: openOrderDetails
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 5032457291481046095}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &1832315004120639807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -674,12 +662,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b042700bfdb8144b2de9c70546d0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orderScriptable: {fileID: 11400000, guid: 3e6a21f44e7a8674ba3fd511d138da19, type: 2}
+  orderScriptable: {fileID: 11400000, guid: 97eaba33d86f25f4b82f115450859eb8, type: 2}
   rowOrdernr: {fileID: 5032457290458462622}
   rowDate: {fileID: 5032457291228304536}
   rowCompany: {fileID: 5032457291101368008}
   rowShipment: {fileID: 5032457291191195904}
   rowPayment: {fileID: 5032457292042137483}
+  button: {fileID: 5032457290300505015}
+  databaseController: {fileID: 0}
 --- !u!1 &5032457292042137481
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,14 +13,17 @@ public class DatabaseController : MonoBehaviour
     [SerializeField] private Transform content;
     [SerializeField] private GameObject prefabRow;
 
+    private List<GameObject> objects = new List<GameObject>();
     void Start()
     {
         List<Order> rowList = orderController.getFirstOrderList();
-        
+
         foreach (var row in rowList)
         {
-            prefabRow.GetComponent<RowDisplay>().orderScriptable = row;
-            Instantiate(prefabRow, content);
+            GameObject obj= Instantiate(prefabRow, content);
+            obj.GetComponent<RowDisplay>().orderScriptable = row;
+            obj.GetComponent<RowDisplay>().Setbutton(this);
+            objects.Add(obj);
         }
     }
 

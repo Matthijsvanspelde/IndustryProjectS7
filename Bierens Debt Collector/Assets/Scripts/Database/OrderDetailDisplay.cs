@@ -23,7 +23,7 @@ public class OrderDetailDisplay : MonoBehaviour
 
     [SerializeField] private Transform content;
     [SerializeField] private GameObject prefabRow;
-
+    private List<GameObject> orderObject = new List<GameObject>();
     void Start()
     {
         
@@ -31,6 +31,11 @@ public class OrderDetailDisplay : MonoBehaviour
 
     public void showOrderDetails(GameObject window, Order order)
     {
+        for (int i = 0; i < orderObject.Count; i++)
+        {
+            Destroy(orderObject[i]);
+        }
+        orderObject.Clear();
         window.SetActive(true);
         orderScriptable = order;
 
@@ -52,7 +57,8 @@ public class OrderDetailDisplay : MonoBehaviour
         {
             prefabRow.GetComponent<ItemDisplay>().itemScriptable = row;
             //prefabRow.GetComponent<RowDisplay>().createRow();
-            //Instantiate(prefabRow, content);
+           GameObject newOrder = Instantiate(prefabRow, content);
+            orderObject.Add(newOrder);
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class RowDisplay : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class RowDisplay : MonoBehaviour
     public Text rowCompany;
     public Text rowShipment;
     public Text rowPayment;
+    public Button button;
 
     void Start()
     {
@@ -22,4 +24,10 @@ public class RowDisplay : MonoBehaviour
         rowPayment.text = orderScriptable.payment;
 
     }
+
+    public void Setbutton(DatabaseController action)
+    {
+        button.onClick.AddListener(delegate { action.openOrderDetails(this.gameObject); });
+    }
+    
 }
