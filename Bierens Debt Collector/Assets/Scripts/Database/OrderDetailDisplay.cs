@@ -52,7 +52,7 @@ public class OrderDetailDisplay : MonoBehaviour
         {
             prefabRow.GetComponent<ItemDisplay>().itemScriptable = row;
             //prefabRow.GetComponent<RowDisplay>().createRow();
-            Instantiate(prefabRow, content);
+            //Instantiate(prefabRow, content);
         }
     }
 }
