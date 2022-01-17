@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ValidateDataBaseCheck
   m_EditorClassIdentifier: 
   ValidationText:
-  - EmailNaam
+  - Betaling
   OpenButtonsCallBierens: 0
   OpenButtonsConforntation: 0
   OpenButtonfoundMail: 0

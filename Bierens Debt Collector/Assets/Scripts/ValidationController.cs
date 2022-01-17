@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class ValidationController : MonoBehaviour
 {
-    [SerializeField] private GameObject conforntButton, sendMailButton,callBierens;
+    [SerializeField] private GameObject conforntButton, sendMailButton,callBierens,betalingButton;
+    private void Start()
+    {
+        conforntButton.SetActive(false);
+        sendMailButton.SetActive(false);
+        callBierens.SetActive(false);
+    }
     public void Validate(ValidationScriptableObject validation,PlayerValidation playerValidation)
     {
         int checkValidate = validation.ValidationText.Count;
@@ -40,9 +46,10 @@ public class ValidationController : MonoBehaviour
         }
     }
 
-    void DeactiveButton()
+  public void DeactiveButton()
     {
         sendMailButton.SetActive(false);
         conforntButton.SetActive(false);
+        betalingButton.SetActive(false);
     }
 }

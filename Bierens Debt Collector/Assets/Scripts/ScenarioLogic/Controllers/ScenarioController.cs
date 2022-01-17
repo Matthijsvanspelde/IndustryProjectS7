@@ -7,8 +7,10 @@ public class ScenarioController : MonoBehaviour
     [SerializeField] private List<StoryScriptableObject> scenarioStartObjects;
     [SerializeField] private MailController mailController;
 
+
     private int stressLevel;
     private int levelsCompleted;
+
 
     public List<StoryScriptableObject> StartObjectsList()
     {
@@ -27,9 +29,6 @@ public class ScenarioController : MonoBehaviour
 
     
 
-    public void ResponseDebet()
-    {
 
-    }
 
 }
