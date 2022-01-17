@@ -43,10 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db53e42725fbdea4da67c96c29560dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mailButtonPrefab: {fileID: 8005415953213440377, guid: 18cb5e2441b3471409ab9bbaa21237c0, type: 3}
+  mailButtonPrefab: {fileID: 7816981537310541903, guid: 357aebcc9f157fa46873ed84194e18a6, type: 3}
   mailText: {fileID: 0}
-  MailParant: {fileID: 0}
+  MailParent: {fileID: 0}
   responseWindow: {fileID: 0}
+  selectedColor:
+    serializedVersion: 2
+    rgba: 4292462001
 --- !u!1 &6349265206242011564
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,4 +94,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca43a75be4fce274c8910dbde2d5808c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mailView: {fileID: 0}
+  mailView: {fileID: 6349265205601161532}
+  gameController: {fileID: 0}

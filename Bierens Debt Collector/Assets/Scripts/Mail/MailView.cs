@@ -54,17 +54,4 @@ public class MailView : MonoBehaviour
     {
         responseWindow.SetActive(true);
     }
-
-    public void ResponseMailBtn(ResponseCode response)
-    {
-        switch(response.response)
-        {
-            case ResponseCode.SendResponse.CONFRONTATION:
-                break;
-            case ResponseCode.SendResponse.CALLBIERENS:
-                break;
-            case ResponseCode.SendResponse.RESEARCHCONFRONTATION:
-                break;
-        }
-    }
 }

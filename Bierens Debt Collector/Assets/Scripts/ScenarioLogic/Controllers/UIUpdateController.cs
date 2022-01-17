@@ -16,6 +16,7 @@ public void CreateUIButtonsForScenarios()
     }
     public void LoadScenario(int index)
     {
+        
         gameController.LoadScenario(index);
     }
     public void GoToNextObject(StoryScriptableObject storyScriptableObject)
