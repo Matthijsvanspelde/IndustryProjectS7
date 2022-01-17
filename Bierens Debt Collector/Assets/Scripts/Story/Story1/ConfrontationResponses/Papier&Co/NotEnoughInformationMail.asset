@@ -10,17 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
-  m_Name: NeverGonnaPayForTheContract
+  m_Name: NotEnoughInformationMail
   m_EditorClassIdentifier: 
   confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
-  CallBierensResponse: {fileID: 11400000, guid: c05c08e12b34a2546964d895027f10c7, type: 2}
+  CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 0
-  mailTextBox: "Beste werknemer van Webshop.nl,\n\r\nIk weiger te betalen voor de
-    rekening welke u door blijft sturen.\nU begint me op mijn zenuwen te werken met
-    de constante berichten en nutteloze woorden. Dit is de laatste keer dat u van
-    mij hoort en je kan naar je geld fluiten!\n\r\n\rGroeten,\n\nPap van Ier"
-  mailHeader: Je kan naar je geld fluiten!
+  mailTextBox: 'Beste werknemer van Webshop.nl,
+
+
+    De informatie die u mij heeft
+    toegestuurd is al wat meer in de goede richting maar is nogsteeds niet overtuigend
+    genoeg voor mij om te willen betalen. Ik zeg dat u nogmaals moet zoeken want
+    dit accepteer ik niet voor het bedrag dat u wilt verkrijgen van mij.
+
+
+
+    Groeten,
+
+
+    Pap
+    van Ier'
+  mailHeader: Niet genoeg informatie
   ResponseTextBox: 
   validation: {fileID: 0}

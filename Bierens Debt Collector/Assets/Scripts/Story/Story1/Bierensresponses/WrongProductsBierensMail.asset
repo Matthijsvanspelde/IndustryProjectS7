@@ -17,12 +17,13 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 1
-  mailTextBox: "Beste medewerkers van Bierens Incasso,\n\nOp dit moment heb ik te
-    maken met een klant die, na toevoegen van extra kosten voor het niet reageren
-    op betaalverzoeken, reageert met de bewering dat ze een verkeerde levering hebben
-    ontvangen. Ik heb geen zin en tijd om met deze man te praten, zouden jullie dit
-    verder kunnen afhandelen? Toegevoegd aan deze mail zijn alle gegevens van het
-    bedrijf en de persoon met wie ik contact heb kunnen leggen.\n\nGroeten,\n\nMedewerker
-    van Webshop.nl \n"
+  mailTextBox: "Beste medewerker van Webshop.nl,\n\nIn uw recente mail hebben we
+    vernomen dat jullie bedrijf op dit moment te maken heeft met een klant die, na
+    toevoegen van extra kosten voor het niet reageren op betaalverzoeken, reageert
+    met de bewering dat ze een verkeerde levering hebben ontvangen.  \n\nMet behulp
+    van de aan deze mail toegevoegde gegevens van het bedrijf en de persoon met wie
+    contact is gelegd zullen wij proberen dit probleem op te lossen.\n\nGroeten,\n\nBierens
+    Incasso Advocaten"
   mailHeader: Claim voor verkeerd geleverde producten
+  ResponseTextBox: 
   validation: {fileID: 0}

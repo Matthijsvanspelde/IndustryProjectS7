@@ -17,18 +17,25 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 1
-  mailTextBox: 'Beste medewerkers van Bierens,
+  mailTextBox: 'Beste medewerker van Webshop.nl,
 
 
-    Ik ben ten einde raad voor hoe
-    ik met Papier&Co om moet gaan. Deze klant wilt hoe dan ook niet betalen en geeft
-    ook aan niet meer te gaan reageren op mails die ik stuur. Kunnen jullie dit bedrijf
-    op de tand voeren en de eigenaar onder handen nemen. Ik wil graag dat deze zaak
-    wordt afgerond maar zelf kan ik niks meer doen.
+    In uw recente mail hebben
+    we vernomen dat jullie bedrijf op dit moment te maken heeft met Papier&Co, wie
+    volhoudt om niet te betalen of reageren op mails. Dit kunnen wij niet toestaan
+    en wij zullen zware maatregelen treffen om dit bedrijf uw geld afhandig te maken.
 
 
-    Aan deze mail is alle informatie
-    toegevoegd betreffende de zaak, het bedrijf en de naam van de contactpersoon
-    waar ik mee heb gecontacteerd met het bedrijf.'
+    Met
+    behulp van de aan deze mail toegevoegde gegevens van het bedrijf en de persoon
+    met wie contact is gelegd  dit probleem zo snel mogelijk op te lossen.
+
+
+    groeten,
+
+
+    Bierens
+    Incasso Advocaten'
   mailHeader: Niet betalende klant
+  ResponseTextBox: 
   validation: {fileID: 0}

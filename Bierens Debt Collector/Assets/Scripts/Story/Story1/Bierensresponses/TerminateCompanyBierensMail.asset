@@ -17,26 +17,13 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 1
-  mailTextBox: 'Beste medewerkers van Bierens Incasso,
-
-
-    Ik heb op dit moment
-    te maken met een bedrijf dat niet in staat is hun rekeningen te betalen. Ik heb
-    veel verschillende opties gegeven en geen van mijn opties heeft een betaling
-    opgeleverd. Graag zou ik willen vragen of jullie zware maatregelen tegen dit
-    bedrijf gebruiken. Ik wil mijn geld en het maakt niet uit wat ervoor gedaan moet
-    worden tegenover het andere bedrijf.
-
-
-    Bijgevoegd alle informatie van deze
-    zaak, het bedrijf en de contactpersoon van dit bedrijf.
-
-
-    Groeten,
-
-
-    Werknemer
-    van Webshop.nl'
+  mailTextBox: "Beste medewerker van Webshop.nl,\n\nIn uw recente mail hebben we
+    vernomen dat jullie bedrijf op dit moment te maken heeft met een klant die niet
+    in staat is hun rekeningen te betalen en  weigert tot betaling over te gaan.
+    U wilt dat wij  zware maatregelen tegen dit bedrijf gebruiken en dit zullen we
+    doen zoals gevraagd. \n\nMet behulp van de aan deze mail toegevoegde gegevens
+    van het bedrijf en de persoon met wie contact is gelegd  dit probleem zo snel
+    mogelijk op te lossen.\n\nGroeten,\n\nBierens Incasso Advocaten"
   mailHeader: Bedrijf heeft geen geld om de levering te betalen
   ResponseTextBox: 
   validation: {fileID: 0}

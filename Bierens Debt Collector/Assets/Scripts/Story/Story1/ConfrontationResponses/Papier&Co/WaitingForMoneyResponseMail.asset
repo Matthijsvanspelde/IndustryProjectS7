@@ -16,11 +16,11 @@ MonoBehaviour:
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 11400000, guid: ffd4cfc75c6b4324fa61815f87ea8081, type: 2}
   SendMemoryMail: {fileID: 11400000, guid: 1ccf075df2b5fa04196b23b37daef6ca, type: 2}
-  storyFinished: 1
+  storyFinished: 0
   mailTextBox: "Beste medewerker van Webshop.nl,\n\nIk kan helaas niet betalen want
     ik heb het geld ergens anders aan moeten besteden. U zult betaalt worden wanneer
     ik het geld hiervoor heb\r. Dit kan even duren maar het geld zal uiteindelijk
-    worden toegestuurd.\n\r\nGroeten,\r\n\r\nPap van Ier eigenaar van Papier&CO"
+    worden toegestuurd.\n\r\nGroeten,\r\n\r\nPap van Ier"
   mailHeader: Latere betaling
   ResponseTextBox: 
   validation: {fileID: 0}

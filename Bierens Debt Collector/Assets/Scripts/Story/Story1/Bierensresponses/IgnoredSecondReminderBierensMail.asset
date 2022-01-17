@@ -17,13 +17,27 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 1
-  mailTextBox: "Beste medewerkers van Bierens Incasso,\n\nIk heb op dit moment te
-    maken met een klant die niet reageert op betalingsverzoeken welke ik heb gestuurt.
-    Ook had deze klant de verkeerde contactgegevens afgegeven bij de bestelling en
-    ik ben niet in staat om deze te bereiken en zelf achter de schulden aan te gaan.
-    Graag zou ik jullie hulp in willen schakelen.\n\nHet bedrijf in kwestie is Papier&Co,
-    met een schuld van 5000 euro. \nToegevoegd aan deze mail is de bekende informatie
-    van zijn bestelling samen met de correcte contactgegevens.\n\nMet vriendelijke
-    groet,\n\nMedewerker van Webshop.nl"
+  mailTextBox: 'Beste medewerkers van Bierens Incasso,
+
+
+    In uw recente mail hebben
+    we vernomen dat jullie bedrijf op dit moment te maken heeft met een klant die
+    niet reageert op betalingsverzoeken welke u heeft gestuurt en deze deze klant
+    daarnaast ook nog eens de verkeerde contactgegevens had afgegeven bij de bestelling.
+    Dit is een heel slechte zaak en we zullen er werk van maken om de 5000 euro van
+    Papier&Co terug te vorderen.
+
+
+    Met behulp van de aan deze mail toegevoegde
+    gegevens van het bedrijf en de persoon met wie contact is gelegd  dit probleem
+    zo snel mogelijk op te lossen.
+
+
+    Met vriendelijke groet,
+
+
+    Bierens Incasso
+    Advocaten'
   mailHeader: Geen reactie van wanbetaler
+  ResponseTextBox: 
   validation: {fileID: 0}

@@ -17,23 +17,26 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 1
-  mailTextBox: 'Beste medewerkers van Bierens,
+  mailTextBox: 'Beste medewerker van Webshop.nl,
 
 
-    Op dit moment heb ik te maken
-    met een bedrijf dat aangeeft dat er geen betaaltermijn is voor het leveringscontract
-    dat is afgesloten en hierom niet wilt betalen. Ik weet niet hoe ik verder moet
-    gaan met een bedrijf dat op deze manier reageert en zou graag hulp willen.
+    In uw recente mail hebben
+    we vernomen dat jullie bedrijf op dit moment te maken heeft met een bedrijf dat
+    aangeeft dat er geen betaaltermijn is voor het leveringscontract dat is afgesloten
+    en hierom niet wilt betalen. Betaaltermijnen kunnen inderdaad problemen opleveren
+    met wanbetalers. We zullen deze zaak onder handen nemen.
 
 
-    Aan
-    deze mail is alle informatie over het bedrijf, de bestelling en de contactpersoon
-    waar ik mee te maken heb toegevoegd.
+    Met behulp van
+    de aan deze mail toegevoegde gegevens van het bedrijf en de persoon met wie contact
+    is gelegd  dit probleem zo snel mogelijk op te lossen.
 
 
     Groeten,
 
 
-    Medewerker van Webshop.nl'
+    Bierens
+    Incasso Advocaten'
   mailHeader: Geen betalingstermijn maar wel geleverd
+  ResponseTextBox: 
   validation: {fileID: 0}
