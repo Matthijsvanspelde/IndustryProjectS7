@@ -24,5 +24,9 @@ public class ButtonInteractable : Interactable
         {
             gameObject.GetComponent<InputField>().ActivateInputField();
         }
+        if (gameObject.GetComponent<ClickAbleText>() != null)
+        {
+            gameObject.GetComponent<ClickAbleText>().OnPointerClick();
+        }
     }
 }

@@ -8,7 +8,7 @@ public class RenderTextureInteraction : MonoBehaviour
     [SerializeField] private Camera renderTextureCamera;
     [SerializeField] private GameObject computerScreen;
     [SerializeField] private AudioSource audioSource;
-
+    Vector3 posA, posB;
     // Update is called once per frame
     void Update()
     {
@@ -29,15 +29,21 @@ public class RenderTextureInteraction : MonoBehaviour
                 // test these camera coordinates in another raycast test
                 if (Physics.Raycast(portalRay, out portalHit))
                 {
-                    Debug.DrawRay(portalRay.origin, portalHit.transform.position,Color.red);
+                    posA = portalRay.origin;
+                    posB = portalHit.transform.position;
                     if (portalHit.collider.gameObject.GetComponent<Interactable>() != null)
                     {
-                        Debug.Log("Hit");
+                  
+                       // Debug.Log("Hit");
                         portalHit.collider.gameObject.GetComponent<Interactable>().Interact();
                     }
                 }
+               
             }
+
         }
+        //Debug.Log("Debug Ray X: " + posB.x + "Debug ray Y" + posB.y);
+        Debug.DrawRay(posA, -posB, Color.red);
 
     }
 }

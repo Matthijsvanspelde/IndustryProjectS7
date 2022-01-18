@@ -135,15 +135,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 923961338}
     m_Modifications:
-    - target: {fileID: 8928216011609924120, guid: f78a51cc447ccd64c949be08d4497b43, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8928216011666091701, guid: f78a51cc447ccd64c949be08d4497b43, type: 3}
-      propertyPath: m_text
-      value: this is a Text.<link="shortsword"><color=red><u> shortsword</u></color></link>
-        red is clickable
-      objectReference: {fileID: 0}
     - target: {fileID: 8928216012937851120, guid: f78a51cc447ccd64c949be08d4497b43, type: 3}
       propertyPath: m_Name
       value: TestMesh
