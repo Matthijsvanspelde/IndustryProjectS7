@@ -14,7 +14,7 @@ public class StoryScriptableObject : ScriptableObject
 
 
     [Header("Mail setup")]
-    [TextArea]
+    [TextArea(15,20)]
     public string mailTextBox;
     public string mailHeader;
 

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
-  m_Name: InvalidMailBierensCall
+  m_Name: NotEnoughInformationBierensResponse
   m_EditorClassIdentifier: 
   confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
@@ -21,18 +21,21 @@ MonoBehaviour:
 
 
     In uw recente mail hebben
-    we vernomen dat jullie bedrijf op dit moment te maken heeft met een klant die
-    verkeerde contactgegevens heeft afgegeven bij de bestelling en u niet in staat
-    bent geweest om deze te bereiken en zelf achter de schulden aan te gaan. Wij
-    zullen ons best doen het verschuldigde bedrag van 5000 euro terug te halen en
-    zullen met behulp van de toegevoegde gegevens kijken wat voor reactie we kunnen
-    verkrijgen.
+    we vernomen dat jullie bedrijf op dit moment te maken heeft met een bedrijf dat
+    blijft volhouden dat te weinig informatie is gegeven om ze te overtuigen te betalen.
+    Dit is inderdaad een vervelend probleem en we zullen nader onderzoek verrichten
+    en contact leggen met dit bedrijf.
 
 
-    Met vriendelijke groet,
+    Met behulp van de aan deze mail toegevoegde
+    gegevens van het bedrijf en de persoon met wie contact is gelegd  dit probleem
+    zo snel mogelijk op te lossen.
+
+
+    Groeten,
 
 
     Bierens Incasso Advocaten'
-  mailHeader: Bierens, Geen contactgegevens van het  in schulden staande bedrijf
+  mailHeader: 
   ResponseTextBox: 
   validation: {fileID: 0}

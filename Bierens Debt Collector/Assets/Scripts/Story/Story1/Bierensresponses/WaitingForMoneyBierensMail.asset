@@ -17,24 +17,22 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 1
-  mailTextBox: 'Beste medewerkers van Bierens,
+  mailTextBox: 'Beste medewerker van Webshop.nl,
 
 
-    Op dit moment heb ik te maken
-    met een klant welke zegt zijn bestelling niet te kunnen betalen wegens slechte
-    uitgaves. Hoe moet ik omgaan met deze situatie? Ik heb geen tijd om lang met
-    dit bedrijf te moeten communiceren om betaald te worden.
-
-
-    Kunnen jullie
-    het verschuldigde bedrag terughalen? Toegevoegd aan deze mail is alle informatie
-    over het bedrijf en de contactpersoon waar ik mee te maken heb.
+    In uw recente mail hebben
+    we vernomen dat jullie bedrijf op dit moment te maken heeft met een klant die
+    zegt zijn bestelling niet te kunnen betalen wegens slechte uitgaves. Dit is inderdaad
+    een vervelend probleem en we zullen ons best doen om met behulp van de aan deze
+    mail toegevoegde gegevens van het bedrijf en de persoon met wie contact is gelegd 
+    dit probleem zo snel mogelijk op te lossen.
 
 
     Groeten,
 
 
-    Werknemer
-    van Webshop.nl'
+    Bierens Incasso
+    Advocaten'
   mailHeader: Vertraagde betaling door uitgaven bedrijf
+  ResponseTextBox: 
   validation: {fileID: 0}

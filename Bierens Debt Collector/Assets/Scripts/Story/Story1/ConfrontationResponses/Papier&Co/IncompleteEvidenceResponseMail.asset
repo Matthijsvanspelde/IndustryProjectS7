@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: IncompleteEvidenceResponseMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 11400000, guid: 4ce5d75d8557a7a4ab65d2b31fb36b48, type: 2}
+  confrontationResponse: {fileID: 11400000, guid: 15b89ad457369984c98020a178f5a8d7, type: 2}
   excuse: {fileID: 0}
   CallBierensResponse: {fileID: 11400000, guid: f75c3c5ab48b3254e8fc6cf45ff1f11a, type: 2}
   SendMemoryMail: {fileID: 0}
@@ -20,17 +20,18 @@ MonoBehaviour:
   mailTextBox: 'Beste werknemer van Webshop.nl,
 
 
-    Ik kan niet zeggen dat er
-    genoeg bewijsmateriaal is meegeleverd om mij te overtuigen te betalen voor de
-    rekeningen. Graag verzoek ik u meer informatie toe te sturen over de levering
+    Ik kan niet zeggen dat er genoeg
+    bewijsmateriaal is meegeleverd om mij te overtuigen te betalen voor de rekeningen.
+    Graag verzoek ik u meer informatie toe te sturen over de levering
 
-    
+
 
     Groeten,
 
-    
+
 
     Pap
     van Ier'
   mailHeader: Niet genoeg informatie
+  ResponseTextBox: 
   validation: {fileID: 0}

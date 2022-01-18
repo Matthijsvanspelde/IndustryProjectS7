@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PaymentExcuseMail
   m_EditorClassIdentifier: 
   confrontationResponse: {fileID: 0}
-  excuse: {fileID: 0}
+  excuse: {fileID: 11400000, guid: d672c2c0855d98041b9f1f4f8b783d9c, type: 2}
   CallBierensResponse: {fileID: 11400000, guid: c21f015cdd412d64783c10ef839bed0a, type: 2}
   SendMemoryMail: {fileID: 11400000, guid: fd103f15b8f498448847e8e718c8506a, type: 2}
   storyFinished: 0

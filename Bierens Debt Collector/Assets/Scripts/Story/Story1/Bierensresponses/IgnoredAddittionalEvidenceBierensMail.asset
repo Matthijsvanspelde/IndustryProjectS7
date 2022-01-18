@@ -17,27 +17,12 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 0}
   SendMemoryMail: {fileID: 0}
   storyFinished: 1
-  mailTextBox: 'Beste medewerkers van Bierens,
-
-
-    Ik heb op dit moment te maken
-    met een bedrijf dat blijft volhouden dat ik te weinig informatie geef om ze te
-    overtuigen te betalen. Ik heb zo veel mogelijk informatie proberen te vinden
-    naar vraag van mijn contactpersoon bij Papier&Co maar het mocht niet baten.
-
-
-    Zouden
-    jullie kunnen helpen met het overtuigen van het bedrijf om de rekening te betalen?
-
-
-    Toegevoegd
-    aan deze mail alle informatie die ik heb voor deze zaak.
-
-
-    Groeten,
-
-
-    Medewerker
-    van Webshop.nl'
+  mailTextBox: "Beste medewerker van Webshop.nl,\n\nIn uw recente mail hebben we
+    vernomen dat jullie bedrijf op dit moment te maken heeft met een bedrijf dat
+    blijft volhouden dat er te weinig informatie is gegeven om ze te overtuigen te
+    betalen. \n\nWij zullen alle informatie die jullie ons hebben doorgegeven doorkijken
+    en indien nodig meer informatie toevoegen en zoeken en het geld van de wanbetaler
+    betaald te krijgen.\n\nGroeten,\n\nBierens Incasso Advocaten"
   mailHeader: Informatie genegeerd
+  ResponseTextBox: 
   validation: {fileID: 0}
