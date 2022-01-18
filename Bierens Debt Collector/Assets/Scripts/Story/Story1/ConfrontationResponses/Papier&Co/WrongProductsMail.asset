@@ -33,4 +33,4 @@ MonoBehaviour:
     van Ier.'
   mailHeader: Re - Extra kosten voor negering voorgaande berichten
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: 42cd5600c9394b741ab3565fc492f03b, type: 2}
