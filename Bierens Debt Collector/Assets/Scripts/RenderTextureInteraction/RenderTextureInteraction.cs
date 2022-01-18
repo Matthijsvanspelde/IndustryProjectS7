@@ -9,6 +9,8 @@ public class RenderTextureInteraction : MonoBehaviour
     [SerializeField] private GameObject computerScreen;
     [SerializeField] private AudioSource audioSource;
     Vector3 posA, posB;
+    public static Vector3 mousePos;
+
     // Update is called once per frame
     void Update()
     {
@@ -31,9 +33,10 @@ public class RenderTextureInteraction : MonoBehaviour
                 {
                     posA = portalRay.origin;
                     posB = portalHit.transform.position;
+                    mousePos = new Vector3(localPoint.x * renderTextureCamera.pixelWidth, localPoint.y * renderTextureCamera.pixelHeight);
                     if (portalHit.collider.gameObject.GetComponent<Interactable>() != null)
                     {
-                  
+                       
                        // Debug.Log("Hit");
                         portalHit.collider.gameObject.GetComponent<Interactable>().Interact();
                     }
