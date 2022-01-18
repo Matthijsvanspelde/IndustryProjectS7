@@ -7,7 +7,7 @@ public class DatabaseController : MonoBehaviour
 {
     public OrderController orderController;
     public GameObject orderDetailWindow;
-
+    public PlayerValidation playerValidation;
     public GameObject testRow;
 
     [SerializeField] private Transform content;
@@ -29,6 +29,9 @@ public class DatabaseController : MonoBehaviour
 
     public void openOrderDetails(GameObject order)
     {
-        orderDetailWindow.GetComponent<OrderDetailDisplay>().showOrderDetails(orderDetailWindow, order.GetComponent<RowDisplay>().orderScriptable);
+        OrderDetailDisplay ditials = orderDetailWindow.GetComponent<OrderDetailDisplay>();
+        ditials.showOrderDetails(orderDetailWindow, order.GetComponent<RowDisplay>().orderScriptable);
+        playerValidation.ValidationListPlayer.Add(order.GetComponent<RowDisplay>().orderScriptable.company);
+        GameController.instance.CheckValidation();
     }
 }

@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdd383cd0c491ee4db5c371d7868f3d9, type: 3}
-  m_Name: Pen
+  m_Script: {fileID: 11500000, guid: bbe3bd857f2cddb49a2e1543fe04ae7a, type: 3}
+  m_Name: ValidationCompany
   m_EditorClassIdentifier: 
-  itemNr: P103
-  itemName: Dozen Pennen
-  quantity: 500
-  details: 'Kleur: Zwart'
+  ValidationText:
+  - mail
+  OpenButtonsCallBierens: 0
+  OpenButtonsConforntation: 0
+  OpenButtonfoundMail: 1
+  OpenButtonMakeContact: 0

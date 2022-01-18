@@ -6028,10 +6028,10 @@ RectTransform:
   m_Father: {fileID: 261315806}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 323.9262, y: -543.8599}
+  m_SizeDelta: {x: 250, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215478579
 MonoBehaviour:
@@ -37308,6 +37308,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4291141696
       objectReference: {fileID: 0}
+    - target: {fileID: 852162093, guid: 9e8bc5a9336746845972628b1eac30a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 852162094, guid: 9e8bc5a9336746845972628b1eac30a2, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
@@ -48647,10 +48651,10 @@ RectTransform:
   m_Father: {fileID: 261315806}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 123.92621, y: -543.8599}
+  m_SizeDelta: {x: 250, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334248289
 MonoBehaviour:
@@ -52736,10 +52740,10 @@ RectTransform:
   m_Father: {fileID: 261315806}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 323.9262, y: -223.85992}
+  m_SizeDelta: {x: 250, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477821385
 MonoBehaviour:
@@ -59022,6 +59026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1640156779}
   camera: {fileID: 5982112446810578533}
+  playervalidation: {fileID: 1463749741}
 --- !u!114 &1640156783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64210,6 +64215,7 @@ MonoBehaviour:
   - {fileID: 1965824563}
   - {fileID: 3415236881450443765}
   validationController: {fileID: 1756845269}
+  playerValidation: {fileID: 1463749741}
 --- !u!114 &1756845268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78107,7 +78113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1965824564
 RectTransform:
   m_ObjectHideFlags: 0
@@ -85801,10 +85807,10 @@ RectTransform:
   m_Father: {fileID: 261315806}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 123.92621, y: -223.85992}
+  m_SizeDelta: {x: 250, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2136415733
 MonoBehaviour:
@@ -91516,6 +91522,22 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 55
       objectReference: {fileID: 0}
+    - target: {fileID: 5093415550722324948, guid: b5cc02b501cf72740943fa1b8ce4bb64, type: 3}
+      propertyPath: orders.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093415550722324948, guid: b5cc02b501cf72740943fa1b8ce4bb64, type: 3}
+      propertyPath: orders.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093415550722324948, guid: b5cc02b501cf72740943fa1b8ce4bb64, type: 3}
+      propertyPath: orders.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9488ebcb6ebd8f847932b83714597130, type: 2}
+    - target: {fileID: 5093415550722324949, guid: b5cc02b501cf72740943fa1b8ce4bb64, type: 3}
+      propertyPath: playerValidation
+      value: 
+      objectReference: {fileID: 1463749741}
     - target: {fileID: 5093415550722324952, guid: b5cc02b501cf72740943fa1b8ce4bb64, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

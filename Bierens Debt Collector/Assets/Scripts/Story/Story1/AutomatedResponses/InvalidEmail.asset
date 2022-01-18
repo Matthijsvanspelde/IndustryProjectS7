@@ -20,4 +20,4 @@ MonoBehaviour:
   mailTextBox: Mail cannot be delivered. Email adress invalid.
   mailHeader: -Error- Email not send
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: 08f1f2274c5abfa4f8f637d7af1c9774, type: 2}

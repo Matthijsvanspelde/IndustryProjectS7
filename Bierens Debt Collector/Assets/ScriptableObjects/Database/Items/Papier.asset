@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Papier
   m_EditorClassIdentifier: 
   itemNr: P419
-  itemName: Papier Wit
-  quantity: 1
+  itemName: Pakken Papier Wit
+  quantity: 300
   details: 1 pak van 500 vellen A4 - 80 gram

@@ -9,6 +9,7 @@ public class ClickAbleText : MonoBehaviour,IPointerDownHandler
 {
     [SerializeField] private TextMeshProUGUI text;
     [SerializeField] private Camera camera;
+    [SerializeField] private PlayerValidation playervalidation;
     public void OnPointerClick()
     {
 
@@ -20,6 +21,8 @@ public class ClickAbleText : MonoBehaviour,IPointerDownHandler
         {
             TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
             Debug.Log(linkInfo.GetLinkID());
+            playervalidation.ValidationListPlayer.Add(linkInfo.GetLinkID());
+            GameController.instance.CheckValidation();
         }
     }
 

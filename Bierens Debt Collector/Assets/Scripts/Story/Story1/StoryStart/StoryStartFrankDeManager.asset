@@ -19,9 +19,9 @@ MonoBehaviour:
   storyFinished: 0
   mailTextBox: "Beste medewerker,\n\nUit onze administratie is gebleken dat een levering
     van 5000 euro nog niet is betaald door het bedrijf Papier&Co. Het gaat hier om
-    een levering aan A4 papier. \nKan jij de levering nogmaals controleren en contact
-    opnemen met het bedrijf indien de bestelling inderdaad nog niet is afbetaald?\n\nFrank
-    de Manager "
+    een levering aan A4 papier. \nKan jij de<b> levering nogmaals controleren en
+    contact opnemen met het bedrijf</b> indien de bestelling inderdaad nog niet is
+    afbetaald?\n\nFrank de Manager "
   mailHeader: Papier&Co betaling
   ResponseTextBox: 
   validation: {fileID: 11400000, guid: a69efa48c57efed4e84a9128611ca5d4, type: 2}

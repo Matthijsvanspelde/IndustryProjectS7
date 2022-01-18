@@ -8,18 +8,27 @@ public class GameController : MonoBehaviour
     [SerializeField] private MailController mailController;
     [SerializeField] private List<GameObject> apps;
     [SerializeField] private ValidationController validationController;
+    [SerializeField] private PlayerValidation playerValidation;
     private StoryScriptableObject currentStory;
-
+    public static GameController instance { get; set; }
     public StoryScriptableObject CurrentStory { get => currentStory; set => currentStory = value; }
 
     public enum TypeResopnse { Pay, Confront, SendMail, CallBierens }
 
     private void Start()
     {
+        if(instance==null)
+        {
+            instance = this;
+        }
         foreach (var app in apps)
         {
             app.SetActive(true);
         }
+    }
+    public void CheckValidation()
+    {
+        validationController.Validate(currentStory.validation, playerValidation);
     }
 
     public List<StoryScriptableObject> GetStoryScriptableObjects()
@@ -44,7 +53,7 @@ public class GameController : MonoBehaviour
         switch (resopnse)
         {
             case TypeResopnse.Pay:
-                CurrentStory = CurrentStory.SendMemoryMail;
+                CurrentStory = CurrentStory.confrontationResponse;
                 validationController.DeactiveButton();
                 NextStoryPart(CurrentStory);
                 break;
