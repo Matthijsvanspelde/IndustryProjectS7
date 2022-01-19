@@ -62981,6 +62981,11 @@ Transform:
   m_Father: {fileID: 191242188}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1743138598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5093415552016156138, guid: b5cc02b501cf72740943fa1b8ce4bb64, type: 3}
+  m_PrefabInstance: {fileID: 7622951139145390636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1749243260
 Mesh:
   m_ObjectHideFlags: 0
@@ -64305,6 +64310,8 @@ MonoBehaviour:
   - {fileID: 557209747}
   - {fileID: 1965824563}
   - {fileID: 3415236881450443765}
+  - {fileID: 1743138598}
+  - {fileID: 1764869808}
   validationController: {fileID: 1756845269}
   cameraAnimation: {fileID: 1463749739}
   pcAnimation: {fileID: 4730599263921580732}
