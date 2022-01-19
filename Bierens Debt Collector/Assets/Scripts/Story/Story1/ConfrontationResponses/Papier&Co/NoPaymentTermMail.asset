@@ -24,4 +24,4 @@ MonoBehaviour:
     ik er zin in heb\r.\n\r\nGroeten,\r\n\r\nPap van Ier"
   mailHeader: Geen betaaltermijn aanwezig in dit contract
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: 42cd5600c9394b741ab3565fc492f03b, type: 2}

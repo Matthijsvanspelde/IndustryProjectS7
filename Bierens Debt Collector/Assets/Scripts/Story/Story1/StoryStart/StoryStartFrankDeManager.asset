@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   confrontationResponse: {fileID: 11400000, guid: 79f849b56629c6d47b5a6a1daa8215f6, type: 2}
   excuse: {fileID: 0}
-  CallBierensResponse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: f8cebae1c9d1254488009b58dace81eb, type: 2}
   SendMemoryMail: {fileID: 11400000, guid: eb503b61e31605a4da57a0635b348e7d, type: 2}
   storyFinished: 0
   mailTextBox: "Beste medewerker,\n\nUit onze administratie is gebleken dat een levering
