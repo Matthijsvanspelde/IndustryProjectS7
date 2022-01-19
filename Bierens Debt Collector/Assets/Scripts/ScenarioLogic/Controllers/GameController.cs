@@ -42,10 +42,12 @@ public class GameController : MonoBehaviour
     {
         CurrentStory = ScenarioController.StartScenario(index);
         mailController.CreateStoryMail(CurrentStory);
+        validationController.CheckOpen(CurrentStory.validation);
     }
     public void NextStoryPart(StoryScriptableObject storyScriptableObject)
     {
         mailController.CreateStoryMail(storyScriptableObject);
+        validationController.CheckOpen(storyScriptableObject.validation);
     }
 
     public void ResponseDebet(TypeResopnse resopnse)

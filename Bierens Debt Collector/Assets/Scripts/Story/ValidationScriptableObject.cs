@@ -10,4 +10,6 @@ public class ValidationScriptableObject : ScriptableObject
     public bool OpenButtonsConforntation;
     public bool OpenButtonfoundMail;
     public bool OpenButtonMakeContact;
+    public bool OpenButtonPay;
+    public bool OpenAll;
 }

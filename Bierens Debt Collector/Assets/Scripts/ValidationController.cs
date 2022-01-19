@@ -13,7 +13,7 @@ public class ValidationController : MonoBehaviour
     }
     public void Validate(ValidationScriptableObject validation,PlayerValidation playerValidation)
     {
-        int checkValidate = validation.ValidationText.Count;
+        int checkValidate = 0;
         for (int i = 0; i < playerValidation.ValidationListPlayer.Count; i++)
         {
             for (int j = 0; j < validation.ValidationText.Count; j++)
@@ -52,5 +52,16 @@ public class ValidationController : MonoBehaviour
         conforntButton.SetActive(false);
         betalingButton.SetActive(false);
         callBierens.SetActive(true);
+    }
+
+    public void CheckOpen(ValidationScriptableObject validation)
+    {
+        if(validation.OpenAll)
+        {
+            sendMailButton.SetActive(validation.OpenButtonfoundMail);
+            conforntButton.SetActive(validation.OpenButtonsConforntation);
+            betalingButton.SetActive(validation.OpenButtonPay);
+            callBierens.SetActive(validation.OpenButtonsCallBierens);
+        }
     }
 }
