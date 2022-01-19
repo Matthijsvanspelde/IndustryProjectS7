@@ -9,7 +9,7 @@ public class ValidationController : MonoBehaviour
     {
         conforntButton.SetActive(false);
         sendMailButton.SetActive(false);
-        callBierens.SetActive(false);
+        callBierens.SetActive(true);
     }
     public void Validate(ValidationScriptableObject validation,PlayerValidation playerValidation)
     {
@@ -51,5 +51,6 @@ public class ValidationController : MonoBehaviour
         sendMailButton.SetActive(false);
         conforntButton.SetActive(false);
         betalingButton.SetActive(false);
+        callBierens.SetActive(true);
     }
 }
