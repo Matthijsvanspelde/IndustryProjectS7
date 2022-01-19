@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: AnotherBadExcuseMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 11400000, guid: f39a1f848bd1f0a478154881f30d154f, type: 2}
+  confrontationResponse: {fileID: 0}
   excuse: {fileID: 0}
-  CallBierensResponse: {fileID: 11400000, guid: b57d87b20d44be74d9da34f4f2127bdd, type: 2}
+  CallBierensResponse: {fileID: 11400000, guid: c05c08e12b34a2546964d895027f10c7, type: 2}
   SendMemoryMail: {fileID: 0}
   storyFinished: 0
   mailTextBox: 'Beste werknemer van Webshop.nl,
@@ -34,4 +34,4 @@ MonoBehaviour:
     Pap van Ier'
   mailHeader: Stop met de opdringerige mails!
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: 41e5b46040ab92b46895cce37db4ea08, type: 2}

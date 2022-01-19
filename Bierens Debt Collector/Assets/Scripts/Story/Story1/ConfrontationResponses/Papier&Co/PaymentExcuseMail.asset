@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: PaymentExcuseMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 0}
+  confrontationResponse: {fileID: 11400000, guid: d672c2c0855d98041b9f1f4f8b783d9c, type: 2}
   excuse: {fileID: 11400000, guid: d672c2c0855d98041b9f1f4f8b783d9c, type: 2}
   CallBierensResponse: {fileID: 11400000, guid: c21f015cdd412d64783c10ef839bed0a, type: 2}
   SendMemoryMail: {fileID: 11400000, guid: fd103f15b8f498448847e8e718c8506a, type: 2}
@@ -32,4 +32,4 @@ MonoBehaviour:
     Pap van ier'
   mailHeader: Latere betaling
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: c60e2ebd7e36499438704ce55e7a007d, type: 2}

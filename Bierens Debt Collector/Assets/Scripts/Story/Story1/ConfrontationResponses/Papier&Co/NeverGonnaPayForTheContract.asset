@@ -23,4 +23,4 @@ MonoBehaviour:
     mij hoort en je kan naar je geld fluiten!\n\r\n\rGroeten,\n\nPap van Ier"
   mailHeader: Je kan naar je geld fluiten!
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: ce63e0db38e2b1249926a23da3ec7b4f, type: 2}

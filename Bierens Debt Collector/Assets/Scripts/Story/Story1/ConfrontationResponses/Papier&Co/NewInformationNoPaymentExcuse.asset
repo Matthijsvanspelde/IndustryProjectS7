@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
+  m_Name: NewInformationNoPaymentExcuse
+  m_EditorClassIdentifier: 
+  confrontationResponse: {fileID: 11400000, guid: f39a1f848bd1f0a478154881f30d154f, type: 2}
+  excuse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: c21f015cdd412d64783c10ef839bed0a, type: 2}
+  SendMemoryMail: {fileID: 0}
+  storyFinished: 0
+  mailTextBox: 'Beste medewerker van Webshop.nl,
+
+
+    Bedankt voor het eindelijk
+    versturen van duidelijke informatie, maar ik kan helaas nogsteeds niet overgaan
+    tot betaling. In de tijd dat jullie onvolledige informatie aan het doorsturen
+    waren heb ik andere rekeningen moeten betalen. Jullie zullen moeten wachten totdat
+    ik het geld voor de rekening heb.
+
+
+    Groeten,
+
+
+    Pap van Ier'
+  mailHeader: Niet genoeg geld om meteen te betalen
+  ResponseTextBox: 
+  validation: {fileID: 11400000, guid: ce63e0db38e2b1249926a23da3ec7b4f, type: 2}

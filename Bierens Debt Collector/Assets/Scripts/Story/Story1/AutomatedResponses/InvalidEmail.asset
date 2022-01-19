@@ -17,7 +17,11 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 11400000, guid: 19fab4b506035544bb7c2c8a8f1bd33a, type: 2}
   SendMemoryMail: {fileID: 11400000, guid: 937758c48ae41524cb082567271ad25b, type: 2}
   storyFinished: 0
-  mailTextBox: Mail cannot be delivered. Email adress invalid.
+  mailTextBox: 'Uw mail kon niet worden verzonden, het email adres is incorrect
+
+
+    Zoek
+    voor een ander email adres indien mogelijk.'
   mailHeader: -Error- Email not send
   ResponseTextBox: 
   validation: {fileID: 11400000, guid: 08f1f2274c5abfa4f8f637d7af1c9774, type: 2}

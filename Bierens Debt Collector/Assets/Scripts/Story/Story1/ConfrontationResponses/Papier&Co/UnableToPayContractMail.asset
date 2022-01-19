@@ -34,4 +34,4 @@ MonoBehaviour:
     Pap van Ier'
   mailHeader: Niet genoeg geld voor de rekening
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: 41e5b46040ab92b46895cce37db4ea08, type: 2}

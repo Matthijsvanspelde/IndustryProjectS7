@@ -17,8 +17,8 @@ MonoBehaviour:
   CallBierensResponse: {fileID: 11400000, guid: 82e45c1c05b183744aa395883fca9307, type: 2}
   SendMemoryMail: {fileID: 11400000}
   storyFinished: 0
-  mailTextBox: The mail has been send and received. Your mail has been opened but
-    no reply has been send.
+  mailTextBox: Uw mails is ontvangen en bekeken door de ontvanger. Er is geen reactie
+    teruggegeven.
   mailHeader: Automated message
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: c60e2ebd7e36499438704ce55e7a007d, type: 2}

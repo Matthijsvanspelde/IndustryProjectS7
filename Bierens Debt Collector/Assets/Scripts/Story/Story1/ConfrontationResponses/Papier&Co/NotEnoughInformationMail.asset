@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5f0d4c4ab5ad74298bd45a35678be4, type: 3}
   m_Name: NotEnoughInformationMail
   m_EditorClassIdentifier: 
-  confrontationResponse: {fileID: 0}
+  confrontationResponse: {fileID: 11400000, guid: fe291809e4166dc4d980fec5b8d883da, type: 2}
   excuse: {fileID: 0}
-  CallBierensResponse: {fileID: 0}
+  CallBierensResponse: {fileID: 11400000, guid: 8e98833826f59804b869ede317277e33, type: 2}
   SendMemoryMail: {fileID: 0}
   storyFinished: 0
   mailTextBox: 'Beste werknemer van Webshop.nl,
@@ -32,6 +32,6 @@ MonoBehaviour:
 
     Pap
     van Ier'
-  mailHeader: Niet genoeg informatie
+  mailHeader: Nogsteeds onvoldoende informatie
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: c60e2ebd7e36499438704ce55e7a007d, type: 2}

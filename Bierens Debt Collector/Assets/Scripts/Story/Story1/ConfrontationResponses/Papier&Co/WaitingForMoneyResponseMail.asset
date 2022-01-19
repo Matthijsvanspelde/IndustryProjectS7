@@ -19,8 +19,8 @@ MonoBehaviour:
   storyFinished: 0
   mailTextBox: "Beste medewerker van Webshop.nl,\n\nIk kan helaas niet betalen want
     ik heb het geld ergens anders aan moeten besteden. U zult betaalt worden wanneer
-    ik het geld hiervoor heb\r. Dit kan even duren maar het geld zal uiteindelijk
-    worden toegestuurd.\n\r\nGroeten,\r\n\r\nPap van Ier"
-  mailHeader: Latere betaling
+    ik het geld hiervoor heb\r                     . \nDit kan even duren maar het
+    geld zal uiteindelijk worden toegestuurd.\n\r\nGroeten,\r\n\r\nPap van Ier"
+  mailHeader: Afwachten tot betaling
   ResponseTextBox: 
-  validation: {fileID: 0}
+  validation: {fileID: 11400000, guid: e6366d9660c03ff4a94e1b5e142981ba, type: 2}

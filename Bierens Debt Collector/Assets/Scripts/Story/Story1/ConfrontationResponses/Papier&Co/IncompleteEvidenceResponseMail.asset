@@ -34,4 +34,4 @@ MonoBehaviour:
     van Ier'
   mailHeader: Niet genoeg informatie
   ResponseTextBox: 
-  validation: {fileID: 11400000, guid: 42cd5600c9394b741ab3565fc492f03b, type: 2}
+  validation: {fileID: 11400000, guid: ce63e0db38e2b1249926a23da3ec7b4f, type: 2}
