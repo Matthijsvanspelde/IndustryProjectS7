@@ -12,6 +12,10 @@ public class MailController : MonoBehaviour
     {
         MailModel mail = new MailModel(storyScriptableObject.mailHeader, storyScriptableObject.mailTextBox);
         mailView.CreateNewMail(mail);
+        if (storyScriptableObject.storyFinished)
+        {
+            gameController.FadeToMenu();
+        }
     }
 
     public void PayNowResponse()

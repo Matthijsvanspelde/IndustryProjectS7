@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +9,14 @@ public class GameController : MonoBehaviour
     [SerializeField] private MailController mailController;
     [SerializeField] private List<GameObject> apps;
     [SerializeField] private ValidationController validationController;
+    [SerializeField] private Animator cameraAnimation;
     [SerializeField] private PlayerValidation playerValidation;
+    [SerializeField] private GameObject menu;
     private StoryScriptableObject currentStory;
     public static GameController instance { get; set; }
     public StoryScriptableObject CurrentStory { get => currentStory; set => currentStory = value; }
+
+
 
     public enum TypeResopnse { Pay, Confront, SendMail, CallBierens }
 
@@ -75,5 +80,12 @@ public class GameController : MonoBehaviour
                 NextStoryPart(CurrentStory);
                 break;
         }
+    }
+
+    public void FadeToMenu()
+    {
+        cameraAnimation.SetTrigger("StartGame");
+        cameraAnimation.speed = -1;
+        menu.SetActive(true);
     }
 }

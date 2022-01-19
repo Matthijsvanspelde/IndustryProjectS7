@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValidationText:
   - Papier&Co
-  OpenButtonsCallBierens: 0
+  OpenButtonsCallBierens: 1
   OpenButtonsConforntation: 1
   OpenButtonfoundMail: 1
   OpenButtonMakeContact: 0
+  OpenButtonPay: 0
+  OpenAll: 0

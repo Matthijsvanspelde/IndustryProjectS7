@@ -4,27 +4,27 @@ using UnityEngine;
 
 public class ValidationController : MonoBehaviour
 {
-    [SerializeField] private GameObject conforntButton, sendMailButton,callBierens,betalingButton;
+    [SerializeField] private GameObject conforntButton, sendMailButton, callBierens, betalingButton;
     private void Start()
     {
         conforntButton.SetActive(false);
         sendMailButton.SetActive(false);
-        callBierens.SetActive(true);
+        callBierens.SetActive(false);
     }
-    public void Validate(ValidationScriptableObject validation,PlayerValidation playerValidation)
+    public void Validate(ValidationScriptableObject validation, PlayerValidation playerValidation)
     {
         int checkValidate = 0;
         for (int i = 0; i < playerValidation.ValidationListPlayer.Count; i++)
         {
             for (int j = 0; j < validation.ValidationText.Count; j++)
             {
-                if(playerValidation.ValidationListPlayer[i]==validation.ValidationText[j])
+                if (playerValidation.ValidationListPlayer[i] == validation.ValidationText[j])
                 {
                     checkValidate++;
                 }
             }
         }
-        if(checkValidate>=validation.ValidationText.Count)
+        if (checkValidate >= validation.ValidationText.Count)
         {
             ActiveButton(validation);
         }
@@ -32,21 +32,21 @@ public class ValidationController : MonoBehaviour
 
     void ActiveButton(ValidationScriptableObject validation)
     {
-        if(validation.OpenButtonsCallBierens)
+        if (validation.OpenButtonsCallBierens)
         {
             callBierens.SetActive(true);
         }
-        if(validation.OpenButtonsConforntation)
+        if (validation.OpenButtonsConforntation)
         {
             conforntButton.SetActive(true);
         }
-        if(validation.OpenButtonfoundMail)
+        if (validation.OpenButtonfoundMail)
         {
             sendMailButton.SetActive(true);
         }
     }
 
-  public void DeactiveButton()
+    public void DeactiveButton()
     {
         sendMailButton.SetActive(false);
         conforntButton.SetActive(false);
@@ -56,12 +56,15 @@ public class ValidationController : MonoBehaviour
 
     public void CheckOpen(ValidationScriptableObject validation)
     {
-        if(validation.OpenAll)
+        if (validation != null)
         {
-            sendMailButton.SetActive(validation.OpenButtonfoundMail);
-            conforntButton.SetActive(validation.OpenButtonsConforntation);
-            betalingButton.SetActive(validation.OpenButtonPay);
-            callBierens.SetActive(validation.OpenButtonsCallBierens);
+            if (validation.OpenAll)
+            {
+                sendMailButton.SetActive(validation.OpenButtonfoundMail);
+                conforntButton.SetActive(validation.OpenButtonsConforntation);
+                betalingButton.SetActive(validation.OpenButtonPay);
+                callBierens.SetActive(validation.OpenButtonsCallBierens);
+            }
         }
     }
 }
