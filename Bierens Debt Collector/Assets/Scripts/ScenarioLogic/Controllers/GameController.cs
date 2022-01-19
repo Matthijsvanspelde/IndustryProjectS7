@@ -10,8 +10,11 @@ public class GameController : MonoBehaviour
     [SerializeField] private List<GameObject> apps;
     [SerializeField] private ValidationController validationController;
     [SerializeField] private Animator cameraAnimation;
+    [SerializeField] private Animator pcAnimation;
     [SerializeField] private PlayerValidation playerValidation;
     [SerializeField] private GameObject menu;
+    [SerializeField] private List<GameObject> sites;
+
     private StoryScriptableObject currentStory;
     public static GameController instance { get; set; }
     public StoryScriptableObject CurrentStory { get => currentStory; set => currentStory = value; }
@@ -26,9 +29,9 @@ public class GameController : MonoBehaviour
         {
             instance = this;
         }
-        foreach (var app in apps)
+        for (int i =0; i<apps.Count-2; i++)
         {
-            app.SetActive(true);
+            apps[i].SetActive(true);
         }
     }
     public void CheckValidation()
@@ -84,8 +87,38 @@ public class GameController : MonoBehaviour
 
     public void FadeToMenu()
     {
-        cameraAnimation.SetTrigger("StartGame");
-        cameraAnimation.speed = -1;
+        StartCoroutine(delayBeforeGameEnd());
+    }
+
+    private void DisableApps()
+    {
+        foreach(GameObject app in apps)
+        {
+            app.SetActive(false);
+        }
+    }
+
+    private void ResetBrowser()
+    {
+        for(int i=0; i<sites.Count-1; i++)
+        {
+            if (i == 0)
+            {
+                sites[i].SetActive(true);
+            }
+            else
+            {
+                sites[i].SetActive(false);
+            }
+        }
+    }
+    private IEnumerator delayBeforeGameEnd()
+    {
+        yield return new WaitForSecondsRealtime(5f);
+        cameraAnimation.SetTrigger("EndGame");
+        DisableApps();
+        ResetBrowser();
+        pcAnimation.SetTrigger("Close");
         menu.SetActive(true);
     }
 }

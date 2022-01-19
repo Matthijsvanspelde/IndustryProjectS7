@@ -64230,7 +64230,16 @@ MonoBehaviour:
   - {fileID: 1965824563}
   - {fileID: 3415236881450443765}
   validationController: {fileID: 1756845269}
+  cameraAnimation: {fileID: 1463749739}
+  pcAnimation: {fileID: 4730599263921580732}
   playerValidation: {fileID: 1463749741}
+  menu: {fileID: 269560464}
+  sites:
+  - {fileID: 321238003}
+  - {fileID: 7906730923880792556}
+  - {fileID: 8993266491765516442}
+  - {fileID: 8993266492191654211}
+  - {fileID: 8993266492093377924}
 --- !u!114 &1756845268
 MonoBehaviour:
   m_ObjectHideFlags: 0
