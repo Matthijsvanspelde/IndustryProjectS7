@@ -54,6 +54,11 @@ public class MainMenuController : MonoBehaviour
         }        
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
     private void Update()
     {
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") && !hasStarted)

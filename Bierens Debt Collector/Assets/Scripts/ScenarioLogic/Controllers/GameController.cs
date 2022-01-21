@@ -19,8 +19,6 @@ public class GameController : MonoBehaviour
     public static GameController instance { get; set; }
     public StoryScriptableObject CurrentStory { get => currentStory; set => currentStory = value; }
 
-
-
     public enum TypeResopnse { Pay, Confront, SendMail, CallBierens }
 
     private void Start()

@@ -46,7 +46,6 @@ public class MailView : MonoBehaviour
         selectedMail.GetComponent<Image>().color = selectedColor;
 
         MailModel mailModel = mailDictonary[mailObject];
-        Debug.Log("You Have Mail");
         mailText.SetText(mailModel.MailText);
     }
     

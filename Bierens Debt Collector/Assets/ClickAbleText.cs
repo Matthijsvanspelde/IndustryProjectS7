@@ -12,15 +12,11 @@ public class ClickAbleText : MonoBehaviour,IPointerDownHandler
     [SerializeField] private PlayerValidation playervalidation;
     public void OnPointerClick()
     {
-
         Vector3 mousepos = new Vector3(Input.mousePosition.y, Input.mousePosition.x);
-        Debug.Log("MousePos "+Input.mousePosition);
         int linkIndex = TMP_TextUtilities.FindIntersectingLink(text,RenderTextureInteraction.mousePos , camera);
-        Debug.Log("mousepos in Canvas"+ RenderTextureInteraction.mousePos);
         if (linkIndex != -1)
         {
             TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
-            Debug.Log(linkInfo.GetLinkID());
             playervalidation.ValidationListPlayer.Add(linkInfo.GetLinkID());
             GameController.instance.CheckValidation();
         }
@@ -28,16 +24,11 @@ public class ClickAbleText : MonoBehaviour,IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("start X: " + text.rectTransform.rect.x + " end X:" + (text.rectTransform.rect.x + text.rectTransform.rect.width));
-        Debug.Log("start Y: " + text.rectTransform.rect.y + " end Y:" + (text.rectTransform.rect.y + text.rectTransform.rect.height));
-
-        Debug.Log(Input.mousePosition);
         int linkIndex = TMP_TextUtilities.FindIntersectingLink(text, Input.mousePosition, camera);
-        Debug.Log(linkIndex);
+
         if (linkIndex != -1)
         {
             TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
-            Debug.Log(linkInfo.GetLinkID());
         }
     }
 }

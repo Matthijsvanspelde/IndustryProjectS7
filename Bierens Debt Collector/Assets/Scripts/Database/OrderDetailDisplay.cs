@@ -26,7 +26,7 @@ public class OrderDetailDisplay : MonoBehaviour
     private List<GameObject> orderObject = new List<GameObject>();
     void Start()
     {
-        
+
     }
 
     public void showOrderDetails(GameObject window, Order order)
@@ -57,7 +57,7 @@ public class OrderDetailDisplay : MonoBehaviour
         {
             prefabRow.GetComponent<ItemDisplay>().itemScriptable = row;
             //prefabRow.GetComponent<RowDisplay>().createRow();
-           GameObject newOrder = Instantiate(prefabRow, content);
+            GameObject newOrder = Instantiate(prefabRow, content);
             orderObject.Add(newOrder);
         }
     }
